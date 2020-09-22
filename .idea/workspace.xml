@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="96e2a14a-2d38-4b16-bb9e-14d0fba9c399" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="Package Object" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1hFAtkorsk3fyAcJ5gCD5CjsPer" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.simulator1">
+    <configuration name="BasicFirstExample" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.BasicFirstExample" />
+      <module name="CloudSimulation_HW1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudSim" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="example.CloudSim" />
+      <module name="CloudSimulation_HW1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudSimExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CloudSimExample" />
+      <module name="CloudSimulation_HW1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="simulator1" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.simulator1" />
+      <module name="CloudSimulation_HW1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run cloud sim example" type="SbtRunConfiguration" factoryName="sbt Task" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="tasks" value="~run" />
+      <option name="useSbtShell" value="true" />
+      <option name="vmparams" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled" />
+      <option name="workingDir" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run scala example" type="SbtRunConfiguration" factoryName="sbt Task" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="tasks" value="compile" />
+      <option name="useSbtShell" value="true" />
+      <option name="vmparams" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled" />
+      <option name="workingDir" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="CloudSimulation_HW1" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="javaOptions" value="-Djline.terminal=NONE" />
+      <option name="myConsoleArgs" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CloudSimExample" />
+      <item itemvalue="Application.CloudSim" />
+      <item itemvalue="Application.BasicFirstExample" />
+      <item itemvalue="sbt Task.Run cloud sim example" />
+      <item itemvalue="sbt Task.Run scala example" />
+      <item itemvalue="Scala REPL.Scala REPL" />
+      <item itemvalue="Application.simulator1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.simulator1" />
+        <item itemvalue="Application.BasicFirstExample" />
+        <item itemvalue="Application.CloudSim" />
+        <item itemvalue="Scala REPL.Scala REPL" />
+        <item itemvalue="Application.CloudSimExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="CloudSimulation_HW1" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="cloudsimulation_hw1 [file:/Users/snehaltikare/Documents/3rd%20Sem/CS441%20Distributed%20Cloud%20Computing/CloudSimulation_HW1/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="CloudSimulation_HW1-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3199375947821" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="9101789" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="87871327" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96e2a14a-2d38-4b16-bb9e-14d0fba9c399" name="Default Changelist" comment="" />
+      <created>1599596682390</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599596682390</updated>
+      <workItem from="1599596687105" duration="600000" />
+      <workItem from="1599603279945" duration="5206000" />
+      <workItem from="1599676047279" duration="4788000" />
+      <workItem from="1599778963603" duration="20741000" />
+      <workItem from="1600232449200" duration="3239000" />
+      <workItem from="1600563330799" duration="6439000" />
+      <workItem from="1600582857767" duration="1106000" />
+      <workItem from="1600615036267" duration="23000" />
+      <workItem from="1600615075512" duration="1834000" />
+      <workItem from="1600620780228" duration="1534000" />
+      <workItem from="1600623604695" duration="3499000" />
+      <workItem from="1600632812063" duration="29220000" />
+      <workItem from="1600673352558" duration="119000" />
+      <workItem from="1600673492376" duration="31202000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="94" key="#Project_Structure" timestamp="1599605152587">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="94" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1599605152587" />
+    <state x="458" y="202" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1600760666489">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="458" y="202" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.877@0.23.1440.877" timestamp="1600760666489" />
+    <state x="334" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600673718267">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="334" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1600673718267" />
+    <state x="445" y="239" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600637838409">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="445" y="239" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1600637838409" />
+    <state x="334" y="125" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1599604427641">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="334" y="125" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1440.877@0.23.1440.877" timestamp="1599604427641" />
+    <state x="486" y="295" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1600673841521">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="486" y="295" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.877@0.23.1440.877" timestamp="1600673841521" />
+    <state width="1398" height="259" key="GridCell.Tab.0.bottom" timestamp="1600582832715">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600582832715" />
+    <state width="1398" height="259" key="GridCell.Tab.0.center" timestamp="1600582832714">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1600582832714" />
+    <state width="1398" height="259" key="GridCell.Tab.0.left" timestamp="1600582832714">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1600582832714" />
+    <state width="1398" height="259" key="GridCell.Tab.0.right" timestamp="1600582832714">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1600582832714" />
+    <state width="1398" height="259" key="GridCell.Tab.1.bottom" timestamp="1600582832716">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600582832716" />
+    <state width="1398" height="259" key="GridCell.Tab.1.center" timestamp="1600582832715">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1600582832715" />
+    <state width="1398" height="259" key="GridCell.Tab.1.left" timestamp="1600582832715">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1600582832715" />
+    <state width="1398" height="259" key="GridCell.Tab.1.right" timestamp="1600582832715">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1600582832715" />
+    <state x="397" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1600623718331">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="397" y="261" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1600623718331" />
+    <state x="301" y="154" width="837" height="550" key="find.popup" timestamp="1599782733917">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="301" y="154" width="837" height="550" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1599782733917" />
+    <state x="97" y="155" key="new project wizard" timestamp="1600024725158">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="97" y="155" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1600024725158" />
+  </component>
+</project>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="sbt 1" modules="CloudSimulation_HW1,cloudsimulation_hw1" />
+  </component>
+</project>

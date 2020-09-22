@@ -1,0 +1,117 @@
+02:50:46.444 [main] INFO  com.simulator1$ - Initializing CloudSim...
+02:50:46.592 [main] INFO  com.simulator1$ - Creating a Simple DataCenter with Best Fit VM Allocation Policy and Host Type 1..
+02:50:47.026 [main] INFO  com.simulator1$ - Creating a list of Simple VM
+02:50:47.045 [main] INFO  com.simulator1$ - Creating a list of Simple Cloudlets
+02:50:47.056 [main] INFO  CloudSim - 
+================== Starting CloudSim Plus 5.1.0 ==================
+
+02:50:47.059 [main] INFO  DatacenterSimple - DatacenterSimple1 is starting...
+02:50:47.061 [main] INFO  DatacenterBroker - DatacenterBrokerSimple2 is starting...
+02:50:47.062 [main] INFO  CloudSim - Entities started.
+02:50:47.111 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: List of 1 datacenters(s) received.
+02:50:47.127 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 0 in DatacenterSimple1
+02:50:47.146 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 1 in DatacenterSimple1
+02:50:47.147 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 2 in DatacenterSimple1
+02:50:47.147 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 3 in DatacenterSimple1
+02:50:47.148 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 4 in DatacenterSimple1
+02:50:47.170 [main] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: Vm 0 has been allocated to Host 0/DC 1
+02:50:47.172 [main] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: Vm 1 has been allocated to Host 1/DC 1
+02:50:47.173 [main] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: No suitable host found for Vm 2 in Datacenter 1
+02:50:47.174 [main] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: No suitable host found for Vm 3 in Datacenter 1
+02:50:47.175 [main] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: No suitable host found for Vm 4 in Datacenter 1
+02:50:47.180 [main] ERROR DatacenterBroker - 0.10: DatacenterBrokerSimple2: 3 of the requested 5 VMs couldn't be created because suitable Hosts weren't found in any available Datacenter.
+02:50:47.181 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 0 to Vm 0 in Host 0/DC 1.
+02:50:47.182 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 1 to Vm 1 in Host 1/DC 1.
+02:50:47.182 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 2 to Vm 0 in Host 0/DC 1.
+02:50:47.182 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 3 to Vm 1 in Host 1/DC 1.
+02:50:47.183 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 4 to Vm 0 in Host 0/DC 1.
+02:50:47.183 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 5 to Vm 1 in Host 1/DC 1.
+02:50:47.183 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 6 to Vm 0 in Host 0/DC 1.
+02:50:47.184 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 7 to Vm 1 in Host 1/DC 1.
+02:50:47.184 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 8 to Vm 0 in Host 0/DC 1.
+02:50:47.185 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 9 to Vm 1 in Host 1/DC 1.
+02:50:47.185 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 10 to Vm 0 in Host 0/DC 1.
+02:50:47.186 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 11 to Vm 1 in Host 1/DC 1.
+02:50:47.187 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 12 to Vm 0 in Host 0/DC 1.
+02:50:47.187 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 13 to Vm 1 in Host 1/DC 1.
+02:50:47.188 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 14 to Vm 0 in Host 0/DC 1.
+02:50:47.188 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 15 to Vm 1 in Host 1/DC 1.
+02:50:47.189 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 16 to Vm 0 in Host 0/DC 1.
+02:50:47.189 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 17 to Vm 1 in Host 1/DC 1.
+02:50:47.190 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 18 to Vm 0 in Host 0/DC 1.
+02:50:47.190 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 19 to Vm 1 in Host 1/DC 1.
+02:50:47.191 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 20 to Vm 0 in Host 0/DC 1.
+02:50:47.191 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 21 to Vm 1 in Host 1/DC 1.
+02:50:47.191 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 22 to Vm 0 in Host 0/DC 1.
+02:50:47.192 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 23 to Vm 1 in Host 1/DC 1.
+02:50:47.193 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 24 to Vm 0 in Host 0/DC 1.
+02:50:47.193 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 25 to Vm 1 in Host 1/DC 1.
+02:50:47.194 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 26 to Vm 0 in Host 0/DC 1.
+02:50:47.194 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 27 to Vm 1 in Host 1/DC 1.
+02:50:47.194 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 28 to Vm 0 in Host 0/DC 1.
+02:50:47.195 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 29 to Vm 1 in Host 1/DC 1.
+02:50:47.195 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 30 to Vm 0 in Host 0/DC 1.
+02:50:47.195 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 31 to Vm 1 in Host 1/DC 1.
+02:50:47.195 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 32 to Vm 0 in Host 0/DC 1.
+02:50:47.196 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 33 to Vm 1 in Host 1/DC 1.
+02:50:47.196 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 34 to Vm 0 in Host 0/DC 1.
+02:50:47.197 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 35 to Vm 1 in Host 1/DC 1.
+02:50:47.197 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 36 to Vm 0 in Host 0/DC 1.
+02:50:47.197 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 37 to Vm 1 in Host 1/DC 1.
+02:50:47.198 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 38 to Vm 0 in Host 0/DC 1.
+02:50:47.201 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 39 to Vm 1 in Host 1/DC 1.
+02:50:47.202 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: All waiting Cloudlets submitted to some VM.
+02:50:47.231 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 0 finished and returned to broker.
+02:50:47.232 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 2 finished and returned to broker.
+02:50:47.232 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 4 finished and returned to broker.
+02:50:47.237 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 6 finished and returned to broker.
+02:50:47.237 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 8 finished and returned to broker.
+02:50:47.237 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 10 finished and returned to broker.
+02:50:47.238 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 12 finished and returned to broker.
+02:50:47.238 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 14 finished and returned to broker.
+02:50:47.238 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 16 finished and returned to broker.
+02:50:47.239 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 18 finished and returned to broker.
+02:50:47.239 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 20 finished and returned to broker.
+02:50:47.240 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 22 finished and returned to broker.
+02:50:47.240 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 24 finished and returned to broker.
+02:50:47.241 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 26 finished and returned to broker.
+02:50:47.241 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 28 finished and returned to broker.
+02:50:47.242 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 30 finished and returned to broker.
+02:50:47.242 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 32 finished and returned to broker.
+02:50:47.242 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 34 finished and returned to broker.
+02:50:47.242 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 36 finished and returned to broker.
+02:50:47.243 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 38 finished and returned to broker.
+02:50:47.243 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 1 finished and returned to broker.
+02:50:47.243 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 3 finished and returned to broker.
+02:50:47.243 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 5 finished and returned to broker.
+02:50:47.244 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 7 finished and returned to broker.
+02:50:47.244 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 9 finished and returned to broker.
+02:50:47.244 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 11 finished and returned to broker.
+02:50:47.244 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 13 finished and returned to broker.
+02:50:47.245 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 15 finished and returned to broker.
+02:50:47.245 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 17 finished and returned to broker.
+02:50:47.245 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 19 finished and returned to broker.
+02:50:47.245 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 21 finished and returned to broker.
+02:50:47.245 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 23 finished and returned to broker.
+02:50:47.246 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 25 finished and returned to broker.
+02:50:47.246 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 27 finished and returned to broker.
+02:50:47.246 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 29 finished and returned to broker.
+02:50:47.247 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 31 finished and returned to broker.
+02:50:47.247 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 33 finished and returned to broker.
+02:50:47.248 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 35 finished and returned to broker.
+02:50:47.249 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 37 finished and returned to broker.
+02:50:47.249 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 39 finished and returned to broker.
+02:50:47.253 [main] INFO  CloudSim - 40000.33: Processing last events before simulation shutdown.
+02:50:47.254 [main] INFO  DatacenterBroker - 40000.33: DatacenterBrokerSimple2 is shutting down...
+02:50:47.255 [main] INFO  DatacenterBroker - 40000.33: DatacenterBrokerSimple2: Requesting Vm 1 destruction.
+02:50:47.255 [main] INFO  DatacenterBroker - 40000.33: DatacenterBrokerSimple2: Requesting Vm 0 destruction.
+02:50:47.314 [main] INFO  DatacenterSimple - 40000.33: DatacenterSimple: Vm 1 destroyed on Host 1/DC 1. 
+02:50:47.315 [main] INFO  DatacenterSimple - 40000.33: DatacenterSimple: Vm 0 destroyed on Host 0/DC 1. 
+02:50:47.315 [main] INFO  CloudSim - Simulation: No more future events
+
+02:50:47.317 [main] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+02:50:47.318 [main] INFO  DatacenterSimple - 40000.33: DatacenterSimple1 is shutting down...
+02:50:47.318 [main] INFO  CloudSim - 
+================== Simulation finished at time 40000.33 ==================
+

@@ -1,0 +1,58 @@
+19:12:13.189 [run-main-1] INFO  CloudSim - 
+================== Starting CloudSim Plus 5.1.0 ==================
+
+19:12:13.192 [run-main-1] INFO  DatacenterBroker - DatacenterBrokerSimple1 is starting...
+19:12:13.193 [run-main-1] INFO  DatacenterSimple - DatacenterSimple2 is starting...
+19:12:13.193 [run-main-1] INFO  CloudSim - Entities started.
+19:12:13.200 [run-main-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: List of 1 datacenters(s) received.
+19:12:13.200 [run-main-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: Trying to create Vm 0 in DatacenterSimple2
+19:12:13.213 [run-main-1] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 2
+19:12:13.215 [run-main-1] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple1: Sending Cloudlet 0 to Vm 0 in Host 0/DC 2.
+19:12:13.216 [run-main-1] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple1: Sending Cloudlet 1 to Vm 0 in Host 0/DC 2.
+19:12:13.216 [run-main-1] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple1: All waiting Cloudlets submitted to some VM.
+19:12:13.230 [run-main-1] INFO  DatacenterBroker - 40.11: DatacenterBrokerSimple1: Cloudlet 0 finished and returned to broker.
+19:12:13.230 [run-main-1] INFO  DatacenterBroker - 40.11: DatacenterBrokerSimple1: Cloudlet 1 finished and returned to broker.
+19:12:13.231 [run-main-1] INFO  CloudSim - 40.22: Processing last events before simulation shutdown.
+19:12:13.232 [run-main-1] INFO  DatacenterBroker - 40.22: DatacenterBrokerSimple1 is shutting down...
+19:12:13.232 [run-main-1] INFO  DatacenterBroker - 40.22: DatacenterBrokerSimple1: Requesting Vm 0 destruction.
+19:12:13.238 [run-main-1] INFO  DatacenterSimple - 40.22: DatacenterSimple: Vm 0 destroyed on Host 0/DC 2. 
+19:12:13.238 [run-main-1] INFO  CloudSim - Simulation: No more future events
+
+19:12:13.239 [run-main-1] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+19:12:13.240 [run-main-1] INFO  DatacenterSimple - 40.22: DatacenterSimple2 is shutting down...
+19:12:13.241 [run-main-1] INFO  CloudSim - 
+================== Simulation finished at time 40.22 ==================
+
+19:13:43.741 [run-main-0] INFO  name - Hello there from info!
+19:13:43.744 [run-main-0] DEBUG name - Hello there from debug!
+19:13:43.744 [run-main-0] ERROR name - Hello there from debug!
+19:15:03.878 [run-main-2] INFO  name - Hello there from info!
+19:15:03.879 [run-main-2] DEBUG name - Hello there from debug!
+19:15:03.879 [run-main-2] ERROR name - Hello there from debug!
+19:16:27.982 [run-main-3] INFO  CloudSim - 
+================== Starting CloudSim Plus 5.1.0 ==================
+
+19:16:27.988 [run-main-3] INFO  DatacenterBroker - DatacenterBrokerSimple1 is starting...
+19:16:27.990 [run-main-3] INFO  DatacenterSimple - DatacenterSimple2 is starting...
+19:16:27.991 [run-main-3] INFO  CloudSim - Entities started.
+19:16:27.993 [run-main-3] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: List of 1 datacenters(s) received.
+19:16:27.993 [run-main-3] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: Trying to create Vm 0 in DatacenterSimple2
+19:16:28.003 [run-main-3] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 2
+19:16:28.005 [run-main-3] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple1: Sending Cloudlet 0 to Vm 0 in Host 0/DC 2.
+19:16:28.006 [run-main-3] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple1: Sending Cloudlet 1 to Vm 0 in Host 0/DC 2.
+19:16:28.006 [run-main-3] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple1: All waiting Cloudlets submitted to some VM.
+19:16:28.011 [run-main-3] INFO  DatacenterBroker - 40.11: DatacenterBrokerSimple1: Cloudlet 0 finished and returned to broker.
+19:16:28.012 [run-main-3] INFO  DatacenterBroker - 40.11: DatacenterBrokerSimple1: Cloudlet 1 finished and returned to broker.
+19:16:28.012 [run-main-3] INFO  CloudSim - 40.22: Processing last events before simulation shutdown.
+19:16:28.013 [run-main-3] INFO  DatacenterBroker - 40.22: DatacenterBrokerSimple1 is shutting down...
+19:16:28.013 [run-main-3] INFO  DatacenterBroker - 40.22: DatacenterBrokerSimple1: Requesting Vm 0 destruction.
+19:16:28.015 [run-main-3] INFO  DatacenterSimple - 40.22: DatacenterSimple: Vm 0 destroyed on Host 0/DC 2. 
+19:16:28.015 [run-main-3] INFO  CloudSim - Simulation: No more future events
+
+19:16:28.015 [run-main-3] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+19:16:28.016 [run-main-3] INFO  DatacenterSimple - 40.22: DatacenterSimple2 is shutting down...
+19:16:28.016 [run-main-3] INFO  CloudSim - 
+================== Simulation finished at time 40.22 ==================
+
