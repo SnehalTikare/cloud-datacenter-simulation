@@ -40,6 +40,10 @@ class ConfigApplications {
   val NO_OF_PES_PER_CLOUDLET = CLOUDLETS.getInt("CLOUDLET_PES")
   val LENGTH_OF_CLOUDLET = CLOUDLETS.getInt("CLOUDLET_LENGTH")
 
+  val CLOUDLETS_SCHEDULER = cloud_service_provider.get(0).getConfig("Cloudlet_Scheduler")
+  val CLOUDLETS_CPU_UTIL = cloud_service_provider.get(0).getConfig("UtilizationModel")
 
+  val SCHEDULING_INTERVAL = cloud_service_provider.get(0).getInt("SCHEDULING_INTERVAL")
 
+  val NETWORK_TOPOLOGY_FILE = cloud_service_provider.get(0).getString("NETWORK_TOPOLOGY_FILE")
 }

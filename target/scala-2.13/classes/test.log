@@ -1,117 +1,153 @@
-02:50:46.444 [main] INFO  com.simulator1$ - Initializing CloudSim...
-02:50:46.592 [main] INFO  com.simulator1$ - Creating a Simple DataCenter with Best Fit VM Allocation Policy and Host Type 1..
-02:50:47.026 [main] INFO  com.simulator1$ - Creating a list of Simple VM
-02:50:47.045 [main] INFO  com.simulator1$ - Creating a list of Simple Cloudlets
-02:50:47.056 [main] INFO  CloudSim - 
+00:38:07.016 [run-main-0] INFO  c.C.c.Simulations.Simulation_1$ - Running Simulation 1
+00:38:07.020 [run-main-0] INFO  c.C.c.Simulations.Simulation_1$ - This Simulations shows how First Fit Allocation Policy and TimeShared Scheduling affects the assignment of VM and running of cloudlets
+00:38:07.089 [run-main-0] INFO  c.C.c.Simulations.Simulation_1$ - Creating a Simple DataCenter with First Fit VM Allocation Policy and Host Type 1..
+00:38:07.098 [run-main-0] INFO  c.CS441.cloudsim.Base.DataCenterBase - Number of Hosts created - 4
+00:38:07.143 [run-main-0] INFO  c.C.c.Simulations.Simulation_1$ - Creating a list of Simple VM with Time Shared Scheduler for Cloudlets
+00:38:07.150 [run-main-0] INFO  c.C.c.Simulations.Simulation_1$ - Creating a list of Simple Cloudlets
+00:38:07.161 [run-main-0] INFO  CloudSim - 
 ================== Starting CloudSim Plus 5.1.0 ==================
 
-02:50:47.059 [main] INFO  DatacenterSimple - DatacenterSimple1 is starting...
-02:50:47.061 [main] INFO  DatacenterBroker - DatacenterBrokerSimple2 is starting...
-02:50:47.062 [main] INFO  CloudSim - Entities started.
-02:50:47.111 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: List of 1 datacenters(s) received.
-02:50:47.127 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 0 in DatacenterSimple1
-02:50:47.146 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 1 in DatacenterSimple1
-02:50:47.147 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 2 in DatacenterSimple1
-02:50:47.147 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 3 in DatacenterSimple1
-02:50:47.148 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 4 in DatacenterSimple1
-02:50:47.170 [main] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: Vm 0 has been allocated to Host 0/DC 1
-02:50:47.172 [main] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: Vm 1 has been allocated to Host 1/DC 1
-02:50:47.173 [main] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: No suitable host found for Vm 2 in Datacenter 1
-02:50:47.174 [main] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: No suitable host found for Vm 3 in Datacenter 1
-02:50:47.175 [main] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: No suitable host found for Vm 4 in Datacenter 1
-02:50:47.180 [main] ERROR DatacenterBroker - 0.10: DatacenterBrokerSimple2: 3 of the requested 5 VMs couldn't be created because suitable Hosts weren't found in any available Datacenter.
-02:50:47.181 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 0 to Vm 0 in Host 0/DC 1.
-02:50:47.182 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 1 to Vm 1 in Host 1/DC 1.
-02:50:47.182 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 2 to Vm 0 in Host 0/DC 1.
-02:50:47.182 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 3 to Vm 1 in Host 1/DC 1.
-02:50:47.183 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 4 to Vm 0 in Host 0/DC 1.
-02:50:47.183 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 5 to Vm 1 in Host 1/DC 1.
-02:50:47.183 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 6 to Vm 0 in Host 0/DC 1.
-02:50:47.184 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 7 to Vm 1 in Host 1/DC 1.
-02:50:47.184 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 8 to Vm 0 in Host 0/DC 1.
-02:50:47.185 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 9 to Vm 1 in Host 1/DC 1.
-02:50:47.185 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 10 to Vm 0 in Host 0/DC 1.
-02:50:47.186 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 11 to Vm 1 in Host 1/DC 1.
-02:50:47.187 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 12 to Vm 0 in Host 0/DC 1.
-02:50:47.187 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 13 to Vm 1 in Host 1/DC 1.
-02:50:47.188 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 14 to Vm 0 in Host 0/DC 1.
-02:50:47.188 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 15 to Vm 1 in Host 1/DC 1.
-02:50:47.189 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 16 to Vm 0 in Host 0/DC 1.
-02:50:47.189 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 17 to Vm 1 in Host 1/DC 1.
-02:50:47.190 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 18 to Vm 0 in Host 0/DC 1.
-02:50:47.190 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 19 to Vm 1 in Host 1/DC 1.
-02:50:47.191 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 20 to Vm 0 in Host 0/DC 1.
-02:50:47.191 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 21 to Vm 1 in Host 1/DC 1.
-02:50:47.191 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 22 to Vm 0 in Host 0/DC 1.
-02:50:47.192 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 23 to Vm 1 in Host 1/DC 1.
-02:50:47.193 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 24 to Vm 0 in Host 0/DC 1.
-02:50:47.193 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 25 to Vm 1 in Host 1/DC 1.
-02:50:47.194 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 26 to Vm 0 in Host 0/DC 1.
-02:50:47.194 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 27 to Vm 1 in Host 1/DC 1.
-02:50:47.194 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 28 to Vm 0 in Host 0/DC 1.
-02:50:47.195 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 29 to Vm 1 in Host 1/DC 1.
-02:50:47.195 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 30 to Vm 0 in Host 0/DC 1.
-02:50:47.195 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 31 to Vm 1 in Host 1/DC 1.
-02:50:47.195 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 32 to Vm 0 in Host 0/DC 1.
-02:50:47.196 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 33 to Vm 1 in Host 1/DC 1.
-02:50:47.196 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 34 to Vm 0 in Host 0/DC 1.
-02:50:47.197 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 35 to Vm 1 in Host 1/DC 1.
-02:50:47.197 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 36 to Vm 0 in Host 0/DC 1.
-02:50:47.197 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 37 to Vm 1 in Host 1/DC 1.
-02:50:47.198 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 38 to Vm 0 in Host 0/DC 1.
-02:50:47.201 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 39 to Vm 1 in Host 1/DC 1.
-02:50:47.202 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: All waiting Cloudlets submitted to some VM.
-02:50:47.231 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 0 finished and returned to broker.
-02:50:47.232 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 2 finished and returned to broker.
-02:50:47.232 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 4 finished and returned to broker.
-02:50:47.237 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 6 finished and returned to broker.
-02:50:47.237 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 8 finished and returned to broker.
-02:50:47.237 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 10 finished and returned to broker.
-02:50:47.238 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 12 finished and returned to broker.
-02:50:47.238 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 14 finished and returned to broker.
-02:50:47.238 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 16 finished and returned to broker.
-02:50:47.239 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 18 finished and returned to broker.
-02:50:47.239 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 20 finished and returned to broker.
-02:50:47.240 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 22 finished and returned to broker.
-02:50:47.240 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 24 finished and returned to broker.
-02:50:47.241 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 26 finished and returned to broker.
-02:50:47.241 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 28 finished and returned to broker.
-02:50:47.242 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 30 finished and returned to broker.
-02:50:47.242 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 32 finished and returned to broker.
-02:50:47.242 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 34 finished and returned to broker.
-02:50:47.242 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 36 finished and returned to broker.
-02:50:47.243 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 38 finished and returned to broker.
-02:50:47.243 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 1 finished and returned to broker.
-02:50:47.243 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 3 finished and returned to broker.
-02:50:47.243 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 5 finished and returned to broker.
-02:50:47.244 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 7 finished and returned to broker.
-02:50:47.244 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 9 finished and returned to broker.
-02:50:47.244 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 11 finished and returned to broker.
-02:50:47.244 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 13 finished and returned to broker.
-02:50:47.245 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 15 finished and returned to broker.
-02:50:47.245 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 17 finished and returned to broker.
-02:50:47.245 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 19 finished and returned to broker.
-02:50:47.245 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 21 finished and returned to broker.
-02:50:47.245 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 23 finished and returned to broker.
-02:50:47.246 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 25 finished and returned to broker.
-02:50:47.246 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 27 finished and returned to broker.
-02:50:47.246 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 29 finished and returned to broker.
-02:50:47.247 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 31 finished and returned to broker.
-02:50:47.247 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 33 finished and returned to broker.
-02:50:47.248 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 35 finished and returned to broker.
-02:50:47.249 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 37 finished and returned to broker.
-02:50:47.249 [main] INFO  DatacenterBroker - 40000.22: DatacenterBrokerSimple2: Cloudlet 39 finished and returned to broker.
-02:50:47.253 [main] INFO  CloudSim - 40000.33: Processing last events before simulation shutdown.
-02:50:47.254 [main] INFO  DatacenterBroker - 40000.33: DatacenterBrokerSimple2 is shutting down...
-02:50:47.255 [main] INFO  DatacenterBroker - 40000.33: DatacenterBrokerSimple2: Requesting Vm 1 destruction.
-02:50:47.255 [main] INFO  DatacenterBroker - 40000.33: DatacenterBrokerSimple2: Requesting Vm 0 destruction.
-02:50:47.314 [main] INFO  DatacenterSimple - 40000.33: DatacenterSimple: Vm 1 destroyed on Host 1/DC 1. 
-02:50:47.315 [main] INFO  DatacenterSimple - 40000.33: DatacenterSimple: Vm 0 destroyed on Host 0/DC 1. 
-02:50:47.315 [main] INFO  CloudSim - Simulation: No more future events
+00:38:07.162 [run-main-0] INFO  DatacenterSimple - DatacenterSimple1 is starting...
+00:38:07.163 [run-main-0] INFO  DatacenterBroker - DatacenterBrokerSimple2 is starting...
+00:38:07.163 [run-main-0] INFO  CloudSim - Entities started.
+00:38:07.169 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: List of 1 datacenters(s) received.
+00:38:07.170 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 0 in DatacenterSimple1
+00:38:07.177 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 1 in DatacenterSimple1
+00:38:07.177 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 2 in DatacenterSimple1
+00:38:07.177 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 3 in DatacenterSimple1
+00:38:07.177 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 4 in DatacenterSimple1
+00:38:07.178 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 5 in DatacenterSimple1
+00:38:07.178 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 6 in DatacenterSimple1
+00:38:07.178 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 7 in DatacenterSimple1
+00:38:07.179 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 8 in DatacenterSimple1
+00:38:07.179 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 9 in DatacenterSimple1
+00:38:07.179 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 10 in DatacenterSimple1
+00:38:07.179 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 11 in DatacenterSimple1
+00:38:07.179 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 12 in DatacenterSimple1
+00:38:07.179 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 13 in DatacenterSimple1
+00:38:07.180 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 14 in DatacenterSimple1
+00:38:07.180 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 15 in DatacenterSimple1
+00:38:07.180 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 16 in DatacenterSimple1
+00:38:07.180 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 17 in DatacenterSimple1
+00:38:07.180 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 18 in DatacenterSimple1
+00:38:07.180 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 19 in DatacenterSimple1
+00:38:07.180 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 20 in DatacenterSimple1
+00:38:07.180 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 21 in DatacenterSimple1
+00:38:07.181 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 22 in DatacenterSimple1
+00:38:07.181 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 23 in DatacenterSimple1
+00:38:07.181 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 24 in DatacenterSimple1
+00:38:07.181 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 25 in DatacenterSimple1
+00:38:07.182 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 26 in DatacenterSimple1
+00:38:07.182 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 27 in DatacenterSimple1
+00:38:07.182 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 28 in DatacenterSimple1
+00:38:07.182 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 29 in DatacenterSimple1
+00:38:07.182 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 30 in DatacenterSimple1
+00:38:07.182 [run-main-0] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 31 in DatacenterSimple1
+00:38:07.190 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 0 has been allocated to Host 0/DC 1
+00:38:07.192 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 1 has been allocated to Host 0/DC 1
+00:38:07.195 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 2 has been allocated to Host 0/DC 1
+00:38:07.198 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 3 has been allocated to Host 0/DC 1
+00:38:07.200 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 4 has been allocated to Host 1/DC 1
+00:38:07.200 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 5 has been allocated to Host 1/DC 1
+00:38:07.201 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 6 has been allocated to Host 1/DC 1
+00:38:07.203 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 7 has been allocated to Host 1/DC 1
+00:38:07.204 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 8 has been allocated to Host 2/DC 1
+00:38:07.204 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 9 has been allocated to Host 2/DC 1
+00:38:07.205 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 10 has been allocated to Host 2/DC 1
+00:38:07.206 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 11 has been allocated to Host 2/DC 1
+00:38:07.207 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 12 has been allocated to Host 3/DC 1
+00:38:07.207 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 13 has been allocated to Host 3/DC 1
+00:38:07.208 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 14 has been allocated to Host 3/DC 1
+00:38:07.209 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 15 has been allocated to Host 3/DC 1
+00:38:07.210 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 16 in Datacenter 1
+00:38:07.210 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 17 in Datacenter 1
+00:38:07.210 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 18 in Datacenter 1
+00:38:07.210 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 19 in Datacenter 1
+00:38:07.210 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 20 in Datacenter 1
+00:38:07.211 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 21 in Datacenter 1
+00:38:07.211 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 22 in Datacenter 1
+00:38:07.211 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 23 in Datacenter 1
+00:38:07.211 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 24 in Datacenter 1
+00:38:07.211 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 25 in Datacenter 1
+00:38:07.212 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 26 in Datacenter 1
+00:38:07.212 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 27 in Datacenter 1
+00:38:07.212 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 28 in Datacenter 1
+00:38:07.212 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 29 in Datacenter 1
+00:38:07.212 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 30 in Datacenter 1
+00:38:07.213 [run-main-0] WARN  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: No suitable host found for Vm 31 in Datacenter 1
+00:38:07.215 [run-main-0] ERROR DatacenterBroker - 0.10: DatacenterBrokerSimple2: 16 of the requested 32 VMs couldn't be created because suitable Hosts weren't found in any available Datacenter.
+00:38:07.215 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 0 to Vm 0 in Host 0/DC 1.
+00:38:07.215 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 1 to Vm 1 in Host 0/DC 1.
+00:38:07.215 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 2 to Vm 2 in Host 0/DC 1.
+00:38:07.215 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 3 to Vm 3 in Host 0/DC 1.
+00:38:07.216 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 4 to Vm 4 in Host 1/DC 1.
+00:38:07.216 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 5 to Vm 5 in Host 1/DC 1.
+00:38:07.216 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 6 to Vm 6 in Host 1/DC 1.
+00:38:07.216 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 7 to Vm 7 in Host 1/DC 1.
+00:38:07.216 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 8 to Vm 8 in Host 2/DC 1.
+00:38:07.216 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 9 to Vm 9 in Host 2/DC 1.
+00:38:07.216 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 10 to Vm 10 in Host 2/DC 1.
+00:38:07.217 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 11 to Vm 11 in Host 2/DC 1.
+00:38:07.217 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 12 to Vm 12 in Host 3/DC 1.
+00:38:07.217 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 13 to Vm 13 in Host 3/DC 1.
+00:38:07.217 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 14 to Vm 14 in Host 3/DC 1.
+00:38:07.217 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 15 to Vm 15 in Host 3/DC 1.
+00:38:07.217 [run-main-0] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: All waiting Cloudlets submitted to some VM.
+00:38:07.232 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 0 finished and returned to broker.
+00:38:07.232 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 1 finished and returned to broker.
+00:38:07.232 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 2 finished and returned to broker.
+00:38:07.233 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 3 finished and returned to broker.
+00:38:07.233 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 4 finished and returned to broker.
+00:38:07.233 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 5 finished and returned to broker.
+00:38:07.233 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 6 finished and returned to broker.
+00:38:07.233 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 7 finished and returned to broker.
+00:38:07.233 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 8 finished and returned to broker.
+00:38:07.233 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 9 finished and returned to broker.
+00:38:07.233 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 10 finished and returned to broker.
+00:38:07.233 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 11 finished and returned to broker.
+00:38:07.234 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 12 finished and returned to broker.
+00:38:07.234 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 13 finished and returned to broker.
+00:38:07.234 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 14 finished and returned to broker.
+00:38:07.234 [run-main-0] INFO  DatacenterBroker - 80.22: DatacenterBrokerSimple2: Cloudlet 15 finished and returned to broker.
+00:38:07.235 [run-main-0] INFO  CloudSim - 80.33: Processing last events before simulation shutdown.
+00:38:07.235 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2 is shutting down...
+00:38:07.235 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 15 destruction.
+00:38:07.235 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 14 destruction.
+00:38:07.236 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 13 destruction.
+00:38:07.236 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 12 destruction.
+00:38:07.236 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 11 destruction.
+00:38:07.236 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 10 destruction.
+00:38:07.236 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 9 destruction.
+00:38:07.236 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 8 destruction.
+00:38:07.236 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 7 destruction.
+00:38:07.236 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 6 destruction.
+00:38:07.236 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 5 destruction.
+00:38:07.236 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 4 destruction.
+00:38:07.236 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 3 destruction.
+00:38:07.236 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 2 destruction.
+00:38:07.237 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 1 destruction.
+00:38:07.237 [run-main-0] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Requesting Vm 0 destruction.
+00:38:07.239 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 15 destroyed on Host 3/DC 1. 
+00:38:07.240 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 14 destroyed on Host 3/DC 1. 
+00:38:07.240 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 13 destroyed on Host 3/DC 1. 
+00:38:07.241 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 12 destroyed on Host 3/DC 1. 
+00:38:07.241 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 11 destroyed on Host 2/DC 1. 
+00:38:07.242 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 10 destroyed on Host 2/DC 1. 
+00:38:07.242 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 9 destroyed on Host 2/DC 1. 
+00:38:07.242 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 8 destroyed on Host 2/DC 1. 
+00:38:07.243 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 7 destroyed on Host 1/DC 1. 
+00:38:07.243 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 6 destroyed on Host 1/DC 1. 
+00:38:07.244 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 5 destroyed on Host 1/DC 1. 
+00:38:07.244 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 4 destroyed on Host 1/DC 1. 
+00:38:07.244 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 3 destroyed on Host 0/DC 1. 
+00:38:07.245 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 2 destroyed on Host 0/DC 1. 
+00:38:07.245 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 1 destroyed on Host 0/DC 1. 
+00:38:07.245 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple: Vm 0 destroyed on Host 0/DC 1. 
+00:38:07.245 [run-main-0] INFO  CloudSim - Simulation: No more future events
 
-02:50:47.317 [main] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+00:38:07.246 [run-main-0] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
 
-02:50:47.318 [main] INFO  DatacenterSimple - 40000.33: DatacenterSimple1 is shutting down...
-02:50:47.318 [main] INFO  CloudSim - 
-================== Simulation finished at time 40000.33 ==================
+00:38:07.246 [run-main-0] INFO  DatacenterSimple - 80.33: DatacenterSimple1 is shutting down...
+00:38:07.247 [run-main-0] INFO  CloudSim - 
+================== Simulation finished at time 80.33 ==================
 

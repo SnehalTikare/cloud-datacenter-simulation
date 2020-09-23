@@ -14,6 +14,7 @@ import org.cloudbus.cloudsim.resources.{Pe, PeSimple}
 import org.cloudbus.cloudsim.schedulers.vm.{VmScheduler, VmSchedulerSpaceShared, VmSchedulerTimeShared}
 import org.cloudbus.cloudsim.datacenters.network.NetworkDatacenter
 import org.cloudbus.cloudsim.network.switches.{AggregateSwitch, EdgeSwitch, RootSwitch, Switch}
+import org.cloudbus.cloudsim.schedulers.cloudlet.{CloudletScheduler, CloudletSchedulerSpaceShared, CloudletSchedulerTimeShared}
 import org.cloudbus.cloudsim.vms.network.NetworkVm
 import org.cloudbus.cloudsim.vms.{Vm, VmSimple}
 
@@ -39,9 +40,10 @@ class DataCenterBase extends LazyLogging{
       .toList
   }
 
-  def createPes(): List[Pe] = {
-    createPesInstance(configs.HOSTS1.getInt("no_pes"), configs.PES_CAPACITY)
+  def createPes(NO_PES:Int,PES_CAPACITY:Int): List[Pe] = {
+    createPesInstance(NO_PES, PES_CAPACITY)
   }
+
 
   /**
    * Create a list of Hosts {@Link SimpleHost} and {@Link NetworkHost}
@@ -50,18 +52,25 @@ class DataCenterBase extends LazyLogging{
    * @param HostType Different varieties of  Host with different parameters
    * @return
    */
+
   def createHosts(HOSTS_NO: Int,HostInstanceType:String, HostType:String ): List[Host] = {
+    logger.info("Number of Hosts created - {}",HOSTS_NO )
     (1 to HOSTS_NO).map {
       host =>
-        val pelist = createPes()
-        HostType match {
-          case "host1" => val host = createHostInstance(configs.HOSTS1.getLong("ram"), configs.HOSTS1.getLong("bandwidth"), configs.HOSTS1.getLong("storage"), pelist,HostInstanceType:String)
-                           val scheduler = getVMScheduler(configs.HOSTS1.getString("vmscheduler"))
-                            host.setVmScheduler(scheduler)
-          case "host2" => val host = createHostInstance(configs.HOSTS2.getLong("ram"), configs.HOSTS2.getLong("bandwidth"), configs.HOSTS2.getLong("storage"), pelist,HostInstanceType:String)
+
+
+         HostType match {
+          case "host1" => val pelist = createPes(configs.HOSTS1.getInt("no_pes"),configs.HOSTS1.getInt("mips"))
+                          val host =createHostInstance(configs.HOSTS1.getLong("ram"), configs.HOSTS1.getLong("bandwidth"), configs.HOSTS1.getLong("storage"), pelist,HostInstanceType:String)
+                          val scheduler =getVMScheduler(configs.HOSTS1.getString("vmscheduler"))
+                          host.setVmScheduler(scheduler)
+          case "host2" => val pelist = createPes(configs.HOSTS2.getInt("no_pes"),configs.HOSTS1.getInt("mips"))
+                          val host =createHostInstance(configs.HOSTS2.getLong("ram"), configs.HOSTS2.getLong("bandwidth"), configs.HOSTS2.getLong("storage"), pelist,HostInstanceType:String)
                           val scheduler = getVMScheduler(configs.HOSTS2.getString("vmscheduler"))
                           host.setVmScheduler(scheduler)
         }
+        //val scheduler = getVMScheduler(configs.HOSTS1.getString("vmscheduler"))
+
     }
       .toList
   }
@@ -92,15 +101,19 @@ class DataCenterBase extends LazyLogging{
    * * PES - Number of PE(Processing Element)
    * @return List of VM
    */
-  def createVmList(VM_NO:Int, VM_TYPE:String): List[Vm] ={
+  def createVmList(VM_NO:Int, VM_TYPE:String,SchedulerType:String): List[Vm] ={
     (1 to VM_NO).map{
       vm =>
+        val vm  =
         VM_TYPE match{
-          case "SimpleVm" => val vm = new VmSimple(configs.VMS.getInt("mips"),configs.VMS.getInt("vm_pes"))
-                              vm.setBw(configs.VMS.getInt(" bandwidth")).setRam(configs.VMS.getInt(" ram")).setSize(configs.VMS.getInt(" size"))
-          case "NetworkVm" => val vm = new NetworkVm(configs.VMS.getInt("mips"),configs.VMS.getInt("vm_pes"))
-                              vm.setBw(configs.VMS.getInt(" bandwidth")).setRam(configs.VMS.getInt(" ram")).setSize(configs.VMS.getInt(" size"))
+          case "SimpleVm" =>  new VmSimple(configs.VMS.getInt("mips"),configs.VMS.getInt("vm_pes"))
+                              //vm.setBw(configs.VMS.getInt(" bandwidth")).setRam(configs.VMS.getInt(" ram")).setSize(configs.VMS.getInt(" size"))
+
+          case "NetworkVm" =>  new NetworkVm(configs.VMS.getInt("mips"),configs.VMS.getInt("vm_pes"))
         }
+          vm.setBw(configs.VMS.getInt(" bandwidth")).setRam(configs.VMS.getInt(" ram")).setSize(configs.VMS.getInt(" size"))
+          val scheduler = getCloudletScheduler(SchedulerType)
+          vm.setCloudletScheduler(scheduler)
     }.toList
 
   }
@@ -166,101 +179,12 @@ class DataCenterBase extends LazyLogging{
       case "SpaceShared" => new VmSchedulerSpaceShared()
     }
   }
-
-  /**
-   * Creates a Network within the Datacenter
-   * @param simulation
-   * @param datacenter
-   */
-  def createNetwork(simulation: CloudSim,datacenter: NetworkDatacenter):Unit = {
-  val rootswitch = createSwitchInstance(configs.ROOT_SWITCH,
-                                        simulation: CloudSim,
-                                        datacenter: NetworkDatacenter,
-                                        configs.DATACENTERS.getConfig(configs.ROOT_SWITCH).getDouble("bandwidth"),
-                                        configs.DATACENTERS.getConfig(configs.ROOT_SWITCH).getInt("port"),
-                                        configs.DATACENTERS.getConfig(configs.ROOT_SWITCH).getDouble("delay"))
-  val aggregateswitches = createAggregateSwitches(simulation: CloudSim,datacenter: NetworkDatacenter,rootswitch,configs.DATACENTERS.getConfig(configs.AGGREGATE_SWITCH))
-  val edgeswitches = createEdgeSwitches(simulation: CloudSim,datacenter: NetworkDatacenter,aggregateswitches,configs.DATACENTERS.getConfig(configs.EDGE_SWITCH))
-  val networkHostList = datacenter.getHostList[NetworkHost]
-  networkHostList.forEach { host =>
-    val switch_num = getSwitchIndex(host, configs.DATACENTERS.getConfig(configs.EDGE_SWITCH).getInt("port"))
-    host.setEdgeSwitch(edgeswitches(switch_num).asInstanceOf[EdgeSwitch])
-      //edgeswitches(switch_num).connectHo st(host)
+  def getCloudletScheduler(SchedulerName:String) : CloudletScheduler ={
+    SchedulerName match{
+      case "TimeShared" => new CloudletSchedulerTimeShared()
+      case "SpaceShared" => new CloudletSchedulerSpaceShared()
+    }
   }
 
-}
 
-  /**
-   * Creates an Edge Switch to which Hosts are connected
-   * @param sim - Simulation Object
-   * @param datacenter - Datacenter within which switches are created
-   * @param aggregate - Aggregate Switch to which Edge Switches connect
-   * @param config - Config Object
-   * @return List of Edge Switches
-   */
-  def createEdgeSwitches(sim: CloudSim, datacenter: NetworkDatacenter, aggregate: List[Switch], config: Config): List[Switch] ={
-    (1 to config.getInt("num")).map{
-      ed =>
-        val edSwitch = createSwitchInstance[EdgeSwitch](configs.EDGE_SWITCH,   sim: CloudSim,
-          datacenter: NetworkDatacenter,
-          configs.DATACENTERS.getConfig(configs.EDGE_SWITCH).getDouble("bandwidth"),
-          configs.DATACENTERS.getConfig(configs.EDGE_SWITCH).getInt("port"),
-          configs.DATACENTERS.getConfig(configs.EDGE_SWITCH).getDouble("delay"))
-        datacenter.addSwitch(edSwitch)
-        val agswitchnum = ed / configs.DATACENTERS.getConfig(configs.AGGREGATE_SWITCH).getInt("port")
-        edSwitch.getUplinkSwitches.add(aggregate(agswitchnum))
-        aggregate(agswitchnum).getDownlinkSwitches.add(edSwitch)
-        edSwitch
-    }.toList
-
-  }
-
-  /**
-   * Creates an Aggregate Switch which connects to the Root Switch
-   * @param sim - Simulation Object
-   * @param datacenter - Network Datacenter
-   * @param rootswitch - Root Switch
-   * @param config
-   * @return List of Aggregate Switches
-   */
-  def createAggregateSwitches(sim: CloudSim, datacenter: NetworkDatacenter, rootswitch: Switch, config:Config): List[Switch] ={
-    (1 to config.getInt("num")).map{
-      ag =>
-        val agSwitch = createSwitchInstance[AggregateSwitch](configs.AGGREGATE_SWITCH,
-          sim: CloudSim,
-          datacenter: NetworkDatacenter,
-          configs.DATACENTERS.getConfig(configs.AGGREGATE_SWITCH).getDouble("bandwidth"),
-          configs.DATACENTERS.getConfig(configs.AGGREGATE_SWITCH).getInt("port"),
-          configs.DATACENTERS.getConfig(configs.AGGREGATE_SWITCH).getDouble("delay"))
-        datacenter.addSwitch(agSwitch)
-        rootswitch.getDownlinkSwitches.add(agSwitch)
-        agSwitch.getUplinkSwitches.add(rootswitch)
-        agSwitch
-    }.toList
-
-  }
-
-  /**
-   * Create a Switch based on the given Type - Root Switch, Aggregate Switch or Edge Switch
-   * @param SwitchType Root Switch, Aggregate Switch or Edge Switch
-   * @param bw - the bandwidth with which the Switch has to communicate with Switches in the lower layer or Upper layer.
-   * @param port -the number of ports the switch has.
-   * @param delay the latency time the switch spends to process a received packet.
-   * @return returns the created Switch
-   */
- def createSwitchInstance[T:ClassTag](SwitchType:String,simulation: CloudSim,datacenter: NetworkDatacenter,bw:Double, port:Int, delay:Double): T ={
-   val tClass = implicitly[ClassTag[T]].runtimeClass
-  val switch = SwitchType match{
-     case "RootSwitch" => new RootSwitch(simulation,datacenter)
-     case "AggregateSwitch" => new AggregateSwitch(simulation,datacenter)
-     case "EdgeSwitch" => new EdgeSwitch(simulation,datacenter)
-   }
-   switch.setPorts(port)
-   switch.setUplinkBandwidth(bw)
-   switch.setDownlinkBandwidth(bw)
-   switch.setSwitchingDelay(delay)
-   switch.asInstanceOf[T]
- }
-
-  def getSwitchIndex(host: NetworkHost, switchPorts: Int): Int = (host.getId % Integer.MAX_VALUE / switchPorts).toInt
 }
