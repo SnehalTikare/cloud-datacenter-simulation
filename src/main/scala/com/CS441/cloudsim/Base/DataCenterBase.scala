@@ -32,7 +32,7 @@ class DataCenterBase extends LazyLogging{
    * @param PES_CAPACITY - MIPS Capacity
    * @return
    */
-  def createPesInstance(PES_NO: Int, PES_CAPACITY: Double): List[PeSimple] = {
+  private def createPesInstance(PES_NO: Int, PES_CAPACITY: Double): List[PeSimple] = {
     (1 to PES_NO)
       .map { pe =>
         new PeSimple(PES_CAPACITY)
@@ -40,7 +40,7 @@ class DataCenterBase extends LazyLogging{
       .toList
   }
 
-  def createPes(NO_PES:Int,PES_CAPACITY:Int): List[Pe] = {
+  private def createPes(NO_PES:Int,PES_CAPACITY:Double): List[Pe] = {
     createPesInstance(NO_PES, PES_CAPACITY)
   }
 
@@ -57,14 +57,12 @@ class DataCenterBase extends LazyLogging{
     logger.info("Number of Hosts created - {}",HOSTS_NO )
     (1 to HOSTS_NO).map {
       host =>
-
-
          HostType match {
-          case "host1" => val pelist = createPes(configs.HOSTS1.getInt("no_pes"),configs.HOSTS1.getInt("mips"))
+          case "host1" => val pelist = createPes(configs.HOSTS1.getInt("no_pes"),configs.HOSTS1.getDouble("mips"))
                           val host =createHostInstance(configs.HOSTS1.getLong("ram"), configs.HOSTS1.getLong("bandwidth"), configs.HOSTS1.getLong("storage"), pelist,HostInstanceType:String)
                           val scheduler =getVMScheduler(configs.HOSTS1.getString("vmscheduler"))
                           host.setVmScheduler(scheduler)
-          case "host2" => val pelist = createPes(configs.HOSTS2.getInt("no_pes"),configs.HOSTS1.getInt("mips"))
+          case "host2" => val pelist = createPes(configs.HOSTS2.getInt("no_pes"),configs.HOSTS1.getDouble("mips"))
                           val host =createHostInstance(configs.HOSTS2.getLong("ram"), configs.HOSTS2.getLong("bandwidth"), configs.HOSTS2.getLong("storage"), pelist,HostInstanceType:String)
                           val scheduler = getVMScheduler(configs.HOSTS2.getString("vmscheduler"))
                           host.setVmScheduler(scheduler)
@@ -116,6 +114,12 @@ class DataCenterBase extends LazyLogging{
           vm.setCloudletScheduler(scheduler)
     }.toList
 
+  }
+
+  def createDataCenterList(DataCenterType:String,NO_OF_DATACENTER:Int,Vm_Allocation_Policy:String, simulation: CloudSim,HOSTTYPE:String):List[Datacenter] = {
+    (1 to NO_OF_DATACENTER).map{
+      dc => createDataCenter(DataCenterType:String,Vm_Allocation_Policy:String, simulation: CloudSim,HOSTTYPE:String)
+    }.toList
   }
 
   /**

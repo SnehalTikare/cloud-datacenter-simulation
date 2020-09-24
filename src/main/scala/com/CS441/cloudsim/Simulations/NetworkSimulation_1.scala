@@ -14,6 +14,7 @@ class NetworkSimulation_1 extends LazyLogging{
   val nw_datacenter = nw_datacenterbase.createDataCenter(config.DATACENTER_TYPE.getString("Network"),config.FIRST_FIT,nw_simulation_3,config.HOST_TYPE.getString("host1"))
   val nw_vmList = nw_datacenterbase.createVmList(config.VM_NO,config.VM_TYPE.getString("Simple"), config.CLOUDLETS_SCHEDULER.getString("TimeShared"))
   network_entity.createNetwork(nw_simulation_3,nw_datacenter.asInstanceOf[NetworkDatacenter])
+
   nw_simulation_3.start
 
 }

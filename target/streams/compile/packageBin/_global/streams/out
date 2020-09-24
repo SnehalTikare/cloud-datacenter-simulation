@@ -1,1 +1,51 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/cloudsimulation_hw1_2.13-0.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/cloudsimulation_hw1_2.13-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	topology.brite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/topology.brite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimExample.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/CloudSimExample.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	test.log[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/test.log[0m
+[0m[[0m[0mdebug[0m] [0m[0m	application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/utils[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/utils[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/utils/ConfigApplications.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/utils/ConfigApplications.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/Simulation_2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/Simulation_2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/simulator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/simulator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/Simulation_1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/Simulation_1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/Simulation_1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/Simulation_1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/simulator$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/simulator$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/NetworkSimulation_1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/NetworkSimulation_1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Base[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Base/CloudletBase.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base/CloudletBase.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Base/DataCenterBase.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base/DataCenterBase.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Base/NetworkEntities.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base/NetworkEntities.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

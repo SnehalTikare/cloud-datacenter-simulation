@@ -1,8 +1,11 @@
 package com.CS441.cloudsim.Base
 
+import java.util
+
 import com.typesafe.config.Config
 import org.cloudbus.cloudsim.brokers.DatacenterBroker
 import org.cloudbus.cloudsim.core.CloudSim
+import org.cloudbus.cloudsim.datacenters.Datacenter
 import org.cloudbus.cloudsim.datacenters.network.NetworkDatacenter
 import org.cloudbus.cloudsim.hosts.network.NetworkHost
 import org.cloudbus.cloudsim.network.switches.{AggregateSwitch, EdgeSwitch, RootSwitch, Switch}
@@ -109,14 +112,25 @@ class NetworkEntities extends DataCenterBase {
     switch.asInstanceOf[T]
   }
 
-  def getSwitchIndex(host: NetworkHost, switchPorts: Int): Int = (host.getId % Integer.MAX_VALUE).toInt / switchPorts
+  private def getSwitchIndex(host: NetworkHost, switchPorts: Int): Int = (host.getId % Integer.MAX_VALUE).toInt / switchPorts
 
-   def configureNetwork(sim: CloudSim,datacenter: NetworkDatacenter, broker: DatacenterBroker): Unit = { //load the network topology file
-    val networkTopology = BriteNetworkTopology.getInstance(configs.NETWORK_TOPOLOGY_FILE)
-    sim.setNetworkTopology(networkTopology)
-    var briteNode = 0
-    networkTopology.mapNode(datacenter.getId, briteNode)
-    briteNode = 3
-    networkTopology.mapNode(broker.getId, briteNode)
+
+  /**
+   * Creates the network topology from a brite file.
+   */
+  def configureNetworkTopology(simulation:CloudSim,datacenterList:List[Datacenter], brokerList:List[DatacenterBroker]): Unit = { //load the network topology file
+    val networkTopology = BriteNetworkTopology.getInstance("topology.brite")
+    var count = 0
+    simulation.setNetworkTopology(networkTopology)
+    //Maps CloudSim entities to BRITE entities
+    //Datacenter0 will correspond to BRITE node 0
+    datacenterList.zipWithIndex.foreach{ case(x,i) =>
+      networkTopology.mapNode(datacenterList(i).getId, i)
+      count = i
+    }
+    brokerList.zipWithIndex.foreach { case (broker, j) =>
+      networkTopology.mapNode(brokerList(j).getId,count)
+      count+=1
+    }
   }
 }
