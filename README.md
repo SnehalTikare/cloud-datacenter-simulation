@@ -44,7 +44,8 @@ Choose from the options to run the desired simulations
 
 ```
 
-Simulation example 1 and Simulation example 2 show results of various allocation policies and configuration parameters
+Simulation example 1 and Simulation example 2 show results of various allocation policies and configuration parameters.
+Results of which are explained in the **"Report.docx"**.
 
 #### IaaS Simulation
 This class shows implementation of Infrastructure as a Service. Here, the user has control over the hardware and software specification of VM and Cloudlets. 
