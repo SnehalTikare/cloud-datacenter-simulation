@@ -17,7 +17,7 @@ Based on the requirement of the user, the  cloudlets are assigned are to the Dat
 Current implementation has 3 datacenters with different Hardware and Software Specification and different pricing
 The cloudlet acts as the software application/web service that the user wants to run on the VM.
 User chooses the service provider based on the requirements and pricing.
-Service provider assigns the cloudlets in the chosen datacenter if it can accomodate the VM and Cloudlets.
+Service provider assigns the cloudlets in the chosen datacenter if it can accommodate the VM and Cloudlets.
 */
 
 class PaasSimulation extends LazyLogging {

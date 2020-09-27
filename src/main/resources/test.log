@@ -1,2 +1,0 @@
-17:25:53.346 [pool-12-thread-3] INFO  c.CS441.cloudsim.Base.DataCenterBase - Number of Hosts created - 10
-17:25:53.380 [pool-12-thread-3] INFO  c.CS441.cloudsim.Base.DataCenterBase - Creating 32 VM of type SimpleVm which uses TimeShared for scheduling cloudlets

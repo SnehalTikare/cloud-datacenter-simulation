@@ -1,80 +1,99 @@
-17:25:35.473 [run-main-0] INFO  c.C.c.Simulations.PaasSimulation - Running Platform as a Service Simulation 
-17:25:36.481 [run-main-0] INFO  c.CS441.cloudsim.Base.DataCenterBase - Number of Hosts created - 10
-17:25:36.513 [run-main-0] INFO  c.CS441.cloudsim.Base.DataCenterBase - Number of Hosts created - 10
-17:25:36.520 [run-main-0] INFO  c.CS441.cloudsim.Base.DataCenterBase - Number of Hosts created - 10
-17:25:36.526 [run-main-0] INFO  c.C.c.Simulations.PaasSimulation - Dispalying the details of service provider 
-17:25:39.893 [run-main-0] INFO  c.CS441.cloudsim.Base.DataCenterBase - Creating 8 VM of type SimpleVm which uses TimeShared for scheduling cloudlets
-17:25:39.910 [run-main-0] INFO  CloudSim - 
+18:01:27.210 [run-main-1] INFO  c.C.c.Simulations.SaasSimulation - Running Software as a Service Simulation 
+18:01:27.216 [run-main-1] INFO  c.C.c.Simulations.SaasSimulation - Starting the application to transfer file
+18:01:28.350 [run-main-1] INFO  c.CS441.cloudsim.Base.DataCenterBase - Number of Hosts created - 10
+18:01:28.375 [run-main-1] INFO  c.CS441.cloudsim.Base.DataCenterBase - Creating 10 VM of type NetworkVm which uses TimeShared for scheduling cloudlets
+18:01:28.384 [run-main-1] INFO  c.C.cloudsim.Base.NetworkEntities - Creating Root Switches
+18:01:28.385 [run-main-1] INFO  c.C.cloudsim.Base.NetworkEntities - Creating Aggregates Switches
+18:01:28.386 [run-main-1] INFO  c.C.cloudsim.Base.NetworkEntities - Creating Edge Switches
+18:01:28.398 [run-main-1] INFO  CloudSim - 
 ================== Starting CloudSim Plus 5.1.0 ==================
 
-17:25:39.911 [run-main-0] INFO  DatacenterSimple - DatacenterSimple1 is starting...
-17:25:39.912 [run-main-0] INFO  DatacenterSimple - DatacenterSimple2 is starting...
-17:25:39.912 [run-main-0] INFO  DatacenterSimple - DatacenterSimple3 is starting...
-17:25:39.912 [run-main-0] INFO  DatacenterBroker - DataCenterBrokerCustom4 is starting...
-17:25:39.912 [run-main-0] INFO  CloudSim - Entities started.
-17:25:39.921 [run-main-0] INFO  DatacenterBroker - 0.00: DataCenterBrokerCustom4: List of 3 datacenters(s) received.
-17:25:39.922 [run-main-0] INFO  DatacenterBroker - 0.00: DataCenterBrokerCustom4: Trying to create Vm 0 in DatacenterSimple2
-17:25:39.929 [run-main-0] INFO  DatacenterBroker - 0.00: DataCenterBrokerCustom4: Trying to create Vm 1 in DatacenterSimple2
-17:25:39.929 [run-main-0] INFO  DatacenterBroker - 0.00: DataCenterBrokerCustom4: Trying to create Vm 2 in DatacenterSimple2
-17:25:39.929 [run-main-0] INFO  DatacenterBroker - 0.00: DataCenterBrokerCustom4: Trying to create Vm 3 in DatacenterSimple2
-17:25:39.930 [run-main-0] INFO  DatacenterBroker - 0.00: DataCenterBrokerCustom4: Trying to create Vm 4 in DatacenterSimple2
-17:25:39.930 [run-main-0] INFO  DatacenterBroker - 0.00: DataCenterBrokerCustom4: Trying to create Vm 5 in DatacenterSimple2
-17:25:39.930 [run-main-0] INFO  DatacenterBroker - 0.00: DataCenterBrokerCustom4: Trying to create Vm 6 in DatacenterSimple2
-17:25:39.930 [run-main-0] INFO  DatacenterBroker - 0.00: DataCenterBrokerCustom4: Trying to create Vm 7 in DatacenterSimple2
-17:25:39.948 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: Vm 0 has been allocated to Host 0/DC 2
-17:25:39.953 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: Vm 1 has been allocated to Host 1/DC 2
-17:25:39.954 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: Vm 2 has been allocated to Host 2/DC 2
-17:25:39.955 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: Vm 3 has been allocated to Host 3/DC 2
-17:25:39.956 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: Vm 4 has been allocated to Host 4/DC 2
-17:25:39.956 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: Vm 5 has been allocated to Host 5/DC 2
-17:25:39.957 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: Vm 6 has been allocated to Host 6/DC 2
-17:25:39.958 [run-main-0] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyBestFit: Vm 7 has been allocated to Host 7/DC 2
-17:25:39.958 [run-main-0] INFO  DatacenterBroker - 0.10: DataCenterBrokerCustom4: Sending Cloudlet 0 to Vm 0 in Host 0/DC 2.
-17:25:39.973 [run-main-0] INFO  DatacenterBroker - 0.10: DataCenterBrokerCustom4: Sending Cloudlet 1 to Vm 1 in Host 1/DC 2.
-17:25:39.973 [run-main-0] INFO  DatacenterBroker - 0.10: DataCenterBrokerCustom4: Sending Cloudlet 2 to Vm 2 in Host 2/DC 2.
-17:25:39.973 [run-main-0] INFO  DatacenterBroker - 0.10: DataCenterBrokerCustom4: Sending Cloudlet 3 to Vm 3 in Host 3/DC 2.
-17:25:39.973 [run-main-0] INFO  DatacenterBroker - 0.10: DataCenterBrokerCustom4: Sending Cloudlet 4 to Vm 4 in Host 4/DC 2.
-17:25:39.973 [run-main-0] INFO  DatacenterBroker - 0.10: DataCenterBrokerCustom4: Sending Cloudlet 5 to Vm 5 in Host 5/DC 2.
-17:25:39.974 [run-main-0] INFO  DatacenterBroker - 0.10: DataCenterBrokerCustom4: Sending Cloudlet 6 to Vm 6 in Host 6/DC 2.
-17:25:39.974 [run-main-0] INFO  DatacenterBroker - 0.10: DataCenterBrokerCustom4: Sending Cloudlet 7 to Vm 7 in Host 7/DC 2.
-17:25:39.974 [run-main-0] INFO  DatacenterBroker - 0.10: DataCenterBrokerCustom4: Sending Cloudlet 8 to Vm 0 in Host 0/DC 2.
-17:25:39.984 [run-main-0] INFO  DatacenterBroker - 0.10: DataCenterBrokerCustom4: Sending Cloudlet 9 to Vm 1 in Host 1/DC 2.
-17:25:39.984 [run-main-0] INFO  DatacenterBroker - 0.10: DataCenterBrokerCustom4: All waiting Cloudlets submitted to some VM.
-17:25:39.997 [run-main-0] INFO  DatacenterBroker - 10.10: DataCenterBrokerCustom4: Cloudlet 0 finished and returned to broker.
-17:25:39.998 [run-main-0] INFO  DatacenterBroker - 10.10: DataCenterBrokerCustom4: Cloudlet 8 finished and returned to broker.
-17:25:39.998 [run-main-0] INFO  DatacenterBroker - 10.10: DataCenterBrokerCustom4: Cloudlet 1 finished and returned to broker.
-17:25:39.998 [run-main-0] INFO  DatacenterBroker - 10.10: DataCenterBrokerCustom4: Cloudlet 9 finished and returned to broker.
-17:25:39.998 [run-main-0] INFO  DatacenterBroker - 10.10: DataCenterBrokerCustom4: Cloudlet 2 finished and returned to broker.
-17:25:39.998 [run-main-0] INFO  DatacenterBroker - 10.10: DataCenterBrokerCustom4: Cloudlet 3 finished and returned to broker.
-17:25:39.998 [run-main-0] INFO  DatacenterBroker - 10.10: DataCenterBrokerCustom4: Cloudlet 4 finished and returned to broker.
-17:25:39.998 [run-main-0] INFO  DatacenterBroker - 10.10: DataCenterBrokerCustom4: Cloudlet 5 finished and returned to broker.
-17:25:39.998 [run-main-0] INFO  DatacenterBroker - 10.10: DataCenterBrokerCustom4: Cloudlet 6 finished and returned to broker.
-17:25:39.998 [run-main-0] INFO  DatacenterBroker - 10.10: DataCenterBrokerCustom4: Cloudlet 7 finished and returned to broker.
-17:25:40.000 [run-main-0] INFO  CloudSim - 10.21: Processing last events before simulation shutdown.
-17:25:40.000 [run-main-0] INFO  DatacenterBroker - 10.21: DataCenterBrokerCustom4 is shutting down...
-17:25:40.000 [run-main-0] INFO  DatacenterBroker - 10.21: DataCenterBrokerCustom4: Requesting Vm 7 destruction.
-17:25:40.000 [run-main-0] INFO  DatacenterBroker - 10.21: DataCenterBrokerCustom4: Requesting Vm 6 destruction.
-17:25:40.001 [run-main-0] INFO  DatacenterBroker - 10.21: DataCenterBrokerCustom4: Requesting Vm 5 destruction.
-17:25:40.001 [run-main-0] INFO  DatacenterBroker - 10.21: DataCenterBrokerCustom4: Requesting Vm 4 destruction.
-17:25:40.001 [run-main-0] INFO  DatacenterBroker - 10.21: DataCenterBrokerCustom4: Requesting Vm 3 destruction.
-17:25:40.001 [run-main-0] INFO  DatacenterBroker - 10.21: DataCenterBrokerCustom4: Requesting Vm 2 destruction.
-17:25:40.001 [run-main-0] INFO  DatacenterBroker - 10.21: DataCenterBrokerCustom4: Requesting Vm 1 destruction.
-17:25:40.001 [run-main-0] INFO  DatacenterBroker - 10.21: DataCenterBrokerCustom4: Requesting Vm 0 destruction.
-17:25:40.005 [run-main-0] INFO  DatacenterSimple - 10.21: DatacenterSimple: Vm 7 destroyed on Host 7/DC 2. 
-17:25:40.005 [run-main-0] INFO  DatacenterSimple - 10.21: DatacenterSimple: Vm 6 destroyed on Host 6/DC 2. 
-17:25:40.006 [run-main-0] INFO  DatacenterSimple - 10.21: DatacenterSimple: Vm 5 destroyed on Host 5/DC 2. 
-17:25:40.006 [run-main-0] INFO  DatacenterSimple - 10.21: DatacenterSimple: Vm 4 destroyed on Host 4/DC 2. 
-17:25:40.007 [run-main-0] INFO  DatacenterSimple - 10.21: DatacenterSimple: Vm 3 destroyed on Host 3/DC 2. 
-17:25:40.007 [run-main-0] INFO  DatacenterSimple - 10.21: DatacenterSimple: Vm 2 destroyed on Host 2/DC 2. 
-17:25:40.008 [run-main-0] INFO  DatacenterSimple - 10.21: DatacenterSimple: Vm 1 destroyed on Host 1/DC 2. 
-17:25:40.008 [run-main-0] INFO  DatacenterSimple - 10.21: DatacenterSimple: Vm 0 destroyed on Host 0/DC 2. 
-17:25:40.008 [run-main-0] INFO  CloudSim - Simulation: No more future events
+18:01:28.399 [run-main-1] INFO  DatacenterSimple - NetworkDatacenter1 is starting...
+18:01:28.400 [run-main-1] INFO  AbstractSwitch - RootSwitch2 is starting...
+18:01:28.400 [run-main-1] INFO  AbstractSwitch - AggregateSwitch3 is starting...
+18:01:28.400 [run-main-1] INFO  AbstractSwitch - AggregateSwitch4 is starting...
+18:01:28.400 [run-main-1] INFO  AbstractSwitch - AggregateSwitch5 is starting...
+18:01:28.400 [run-main-1] INFO  AbstractSwitch - EdgeSwitch6 is starting...
+18:01:28.400 [run-main-1] INFO  AbstractSwitch - EdgeSwitch7 is starting...
+18:01:28.400 [run-main-1] INFO  AbstractSwitch - EdgeSwitch8 is starting...
+18:01:28.400 [run-main-1] INFO  AbstractSwitch - EdgeSwitch9 is starting...
+18:01:28.400 [run-main-1] INFO  AbstractSwitch - EdgeSwitch10 is starting...
+18:01:28.400 [run-main-1] INFO  AbstractSwitch - EdgeSwitch11 is starting...
+18:01:28.401 [run-main-1] INFO  AbstractSwitch - EdgeSwitch12 is starting...
+18:01:28.401 [run-main-1] INFO  AbstractSwitch - EdgeSwitch13 is starting...
+18:01:28.401 [run-main-1] INFO  AbstractSwitch - EdgeSwitch14 is starting...
+18:01:28.401 [run-main-1] INFO  AbstractSwitch - EdgeSwitch15 is starting...
+18:01:28.401 [run-main-1] INFO  AbstractSwitch - EdgeSwitch16 is starting...
+18:01:28.401 [run-main-1] INFO  DatacenterBroker - DatacenterBrokerSimple17 is starting...
+18:01:28.401 [run-main-1] INFO  CloudSim - Entities started.
+18:01:28.404 [run-main-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple17: List of 1 datacenters(s) received.
+18:01:28.404 [run-main-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple17: Trying to create Vm 0 in NetworkDatacenter1
+18:01:28.407 [run-main-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple17: Trying to create Vm 1 in NetworkDatacenter1
+18:01:28.408 [run-main-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple17: Trying to create Vm 2 in NetworkDatacenter1
+18:01:28.408 [run-main-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple17: Trying to create Vm 3 in NetworkDatacenter1
+18:01:28.408 [run-main-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple17: Trying to create Vm 4 in NetworkDatacenter1
+18:01:28.408 [run-main-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple17: Trying to create Vm 5 in NetworkDatacenter1
+18:01:28.408 [run-main-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple17: Trying to create Vm 6 in NetworkDatacenter1
+18:01:28.408 [run-main-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple17: Trying to create Vm 7 in NetworkDatacenter1
+18:01:28.408 [run-main-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple17: Trying to create Vm 8 in NetworkDatacenter1
+18:01:28.408 [run-main-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple17: Trying to create Vm 9 in NetworkDatacenter1
+18:01:28.414 [run-main-1] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 0 has been allocated to Host 0/DC 1
+18:01:28.415 [run-main-1] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 1 has been allocated to Host 1/DC 1
+18:01:28.416 [run-main-1] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 2 has been allocated to Host 2/DC 1
+18:01:28.416 [run-main-1] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 3 has been allocated to Host 3/DC 1
+18:01:28.417 [run-main-1] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 4 has been allocated to Host 4/DC 1
+18:01:28.417 [run-main-1] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 5 has been allocated to Host 5/DC 1
+18:01:28.417 [run-main-1] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 6 has been allocated to Host 6/DC 1
+18:01:28.418 [run-main-1] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 7 has been allocated to Host 7/DC 1
+18:01:28.418 [run-main-1] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 8 has been allocated to Host 8/DC 1
+18:01:28.419 [run-main-1] INFO  VmAllocationPolicyAbstract - 0.00: VmAllocationPolicyFirstFit: Vm 9 has been allocated to Host 9/DC 1
+18:01:28.420 [run-main-1] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple17: Sending Cloudlet 0 to Vm 1 in Host 1/DC 1.
+18:01:28.420 [run-main-1] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple17: Sending Cloudlet 1 to Vm 2 in Host 2/DC 1.
+18:01:28.420 [run-main-1] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple17: All waiting Cloudlets submitted to some VM.
+18:01:28.436 [run-main-1] INFO  DatacenterBroker - 10.41: DatacenterBrokerSimple17: Cloudlet 0 finished and returned to broker.
+18:01:28.439 [run-main-1] INFO  DatacenterBroker - 20.21: DatacenterBrokerSimple17: Cloudlet 1 finished and returned to broker.
+18:01:28.440 [run-main-1] INFO  CloudSim - 30.00: Processing last events before simulation shutdown.
+18:01:28.441 [run-main-1] INFO  DatacenterBroker - 30.00: DatacenterBrokerSimple17 is shutting down...
+18:01:28.441 [run-main-1] INFO  DatacenterBroker - 30.00: DatacenterBrokerSimple17: Requesting Vm 9 destruction.
+18:01:28.441 [run-main-1] INFO  DatacenterBroker - 30.00: DatacenterBrokerSimple17: Requesting Vm 8 destruction.
+18:01:28.441 [run-main-1] INFO  DatacenterBroker - 30.00: DatacenterBrokerSimple17: Requesting Vm 7 destruction.
+18:01:28.441 [run-main-1] INFO  DatacenterBroker - 30.00: DatacenterBrokerSimple17: Requesting Vm 6 destruction.
+18:01:28.441 [run-main-1] INFO  DatacenterBroker - 30.00: DatacenterBrokerSimple17: Requesting Vm 5 destruction.
+18:01:28.441 [run-main-1] INFO  DatacenterBroker - 30.00: DatacenterBrokerSimple17: Requesting Vm 4 destruction.
+18:01:28.441 [run-main-1] INFO  DatacenterBroker - 30.00: DatacenterBrokerSimple17: Requesting Vm 3 destruction.
+18:01:28.441 [run-main-1] INFO  DatacenterBroker - 30.00: DatacenterBrokerSimple17: Requesting Vm 2 destruction.
+18:01:28.441 [run-main-1] INFO  DatacenterBroker - 30.00: DatacenterBrokerSimple17: Requesting Vm 1 destruction.
+18:01:28.442 [run-main-1] INFO  DatacenterBroker - 30.00: DatacenterBrokerSimple17: Requesting Vm 0 destruction.
+18:01:28.444 [run-main-1] INFO  DatacenterSimple - 30.00: NetworkDatacenter: Vm 9 destroyed on Host 9/DC 1. 
+18:01:28.444 [run-main-1] INFO  DatacenterSimple - 30.00: NetworkDatacenter: Vm 8 destroyed on Host 8/DC 1. 
+18:01:28.444 [run-main-1] INFO  DatacenterSimple - 30.00: NetworkDatacenter: Vm 7 destroyed on Host 7/DC 1. 
+18:01:28.444 [run-main-1] INFO  DatacenterSimple - 30.00: NetworkDatacenter: Vm 6 destroyed on Host 6/DC 1. 
+18:01:28.445 [run-main-1] INFO  DatacenterSimple - 30.00: NetworkDatacenter: Vm 5 destroyed on Host 5/DC 1. 
+18:01:28.445 [run-main-1] INFO  DatacenterSimple - 30.00: NetworkDatacenter: Vm 4 destroyed on Host 4/DC 1. 
+18:01:28.445 [run-main-1] INFO  DatacenterSimple - 30.00: NetworkDatacenter: Vm 3 destroyed on Host 3/DC 1. 
+18:01:28.446 [run-main-1] INFO  DatacenterSimple - 30.00: NetworkDatacenter: Vm 2 destroyed on Host 2/DC 1. 
+18:01:28.446 [run-main-1] INFO  DatacenterSimple - 30.00: NetworkDatacenter: Vm 1 destroyed on Host 1/DC 1. 
+18:01:28.446 [run-main-1] INFO  DatacenterSimple - 30.00: NetworkDatacenter: Vm 0 destroyed on Host 0/DC 1. 
+18:01:28.446 [run-main-1] INFO  CloudSim - Simulation: No more future events
 
-17:25:40.009 [run-main-0] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+18:01:28.447 [run-main-1] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
 
-17:25:40.009 [run-main-0] INFO  DatacenterSimple - 10.21: DatacenterSimple1 is shutting down...
-17:25:40.010 [run-main-0] INFO  DatacenterSimple - 10.21: DatacenterSimple2 is shutting down...
-17:25:40.010 [run-main-0] INFO  DatacenterSimple - 10.21: DatacenterSimple3 is shutting down...
-17:25:40.011 [run-main-0] INFO  CloudSim - 
-================== Simulation finished at time 10.21 ==================
+18:01:28.447 [run-main-1] INFO  DatacenterSimple - 30.00: NetworkDatacenter1 is shutting down...
+18:01:28.447 [run-main-1] INFO  AbstractSwitch - RootSwitch2 is shutting down...
+18:01:28.447 [run-main-1] INFO  AbstractSwitch - AggregateSwitch3 is shutting down...
+18:01:28.447 [run-main-1] INFO  AbstractSwitch - AggregateSwitch4 is shutting down...
+18:01:28.448 [run-main-1] INFO  AbstractSwitch - AggregateSwitch5 is shutting down...
+18:01:28.448 [run-main-1] INFO  AbstractSwitch - EdgeSwitch6 is shutting down...
+18:01:28.448 [run-main-1] INFO  AbstractSwitch - EdgeSwitch7 is shutting down...
+18:01:28.448 [run-main-1] INFO  AbstractSwitch - EdgeSwitch8 is shutting down...
+18:01:28.448 [run-main-1] INFO  AbstractSwitch - EdgeSwitch9 is shutting down...
+18:01:28.448 [run-main-1] INFO  AbstractSwitch - EdgeSwitch10 is shutting down...
+18:01:28.448 [run-main-1] INFO  AbstractSwitch - EdgeSwitch11 is shutting down...
+18:01:28.448 [run-main-1] INFO  AbstractSwitch - EdgeSwitch12 is shutting down...
+18:01:28.448 [run-main-1] INFO  AbstractSwitch - EdgeSwitch13 is shutting down...
+18:01:28.448 [run-main-1] INFO  AbstractSwitch - EdgeSwitch14 is shutting down...
+18:01:28.448 [run-main-1] INFO  AbstractSwitch - EdgeSwitch15 is shutting down...
+18:01:28.448 [run-main-1] INFO  AbstractSwitch - EdgeSwitch16 is shutting down...
+18:01:28.448 [run-main-1] INFO  CloudSim - 
+================== Simulation finished at time 30.00 ==================
 

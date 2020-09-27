@@ -18,7 +18,7 @@ class SaasSimulation extends LazyLogging{
   This class shows implementation of Software as a Service
   The simulation show an application to transfer data(Like a file transfer service)
   Cloudlets use the service to transfer the packets between two VM hosted on two different hosts
-  The user only invokes this application and has no control over the internal hardware and specification
+  The user only invokes this application and has no control over the internal hardware and software specification
    */
 
   //Log.setLevel(ch.qos.logback.classic.Level.ERROR);
