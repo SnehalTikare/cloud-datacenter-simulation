@@ -27,9 +27,9 @@ sbt test
 ```
 (The tests are written in Java, so if you don't see them then run the **TestClass.scala** in  src/test/scala)
 
-###Program Execution:
+### Program Execution:
 
--The below options are displayed once the program is run.
+- The below options are displayed once the program is run.
 Choose from the options to run the desired simulations
 ```
 |------------------------------|
@@ -50,9 +50,12 @@ Simulation example 1 and Simulation example 2 show results of various allocation
 This class shows implementation of Infrastructure as a Service. Here, the user has control over the hardware and software specification of VM and Cloudlets. 
 Configurations are specified in the config file under **“Infrastructure as a Service”**
 
-User specifies the following things -
+User specifies the following things 
 - Number of Virtual Machine and their specification;
 - VM Allocation policy to be used by data center for allocation of VM;
 - Number of cloudlets and their specification;
 - Utilization Model to be used by Cloudlet;
+
+### PaaS Simulation
+
 
