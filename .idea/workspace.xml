@@ -4,13 +4,6 @@
     <list default="true" id="96e2a14a-2d38-4b16-bb9e-14d0fba9c399" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/cloudsimulation_hw1_2.13-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/cloudsimulation_hw1_2.13-0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/copy-resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +234,7 @@
       <workItem from="1600673352558" duration="119000" />
       <workItem from="1600673492376" duration="35910000" />
       <workItem from="1600811295147" duration="3708000" />
-      <workItem from="1600815691356" duration="114047000" />
+      <workItem from="1600815691356" duration="114133000" />
     </task>
     <task id="LOCAL-00001" summary="Added Network DataCenter">
       <created>1600876931614</created>
@@ -320,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601248753878</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update Readme and Report">
+      <created>1601249056147</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601249056147</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,10 +376,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="486" y="295" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.877@0.23.1440.877" timestamp="1600673841521" />
-    <state x="0" y="64" key="CommitChangelistDialog2" timestamp="1601248753771">
+    <state x="0" y="64" key="CommitChangelistDialog2" timestamp="1601249056004">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="0" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1601248753771" />
+    <state x="0" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1601249056004" />
     <state width="1398" height="451" key="GridCell.Tab.0.bottom" timestamp="1601247361452">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -412,10 +412,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="284" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1601015304354" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1601248759984">
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1601249063214">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1601248759984" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1601249063214" />
     <state x="397" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1600623718331">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

@@ -50,11 +50,12 @@ Simulation example 1 and Simulation example 2 show results of various allocation
 This class shows implementation of Infrastructure as a Service. Here, the user has control over the hardware and software specification of VM and Cloudlets. 
 Configurations are specified in the config file under **“Infrastructure as a Service”**
 
-User specifies the following things; 
-- Number of Virtual Machine and their specification;
-- VM Allocation policy to be used by data center for allocation of VM;
-- Number of cloudlets and their specification;
-- Utilization Model to be used by Cloudlet;
+User specifies the following things.
+
+-  Number of Virtual Machine and their specification;
+-  VM Allocation policy to be used by data center for allocation of VM;
+-  Number of cloudlets and their specification;
+-  Utilization Model to be used by Cloudlet;
 
 #### PaaS Simulation
 This class provides the simulation for Platform as a Service implementation. Based on the requirement of the user, the cloudlets are assigned are to the Datacenter. Current implementation has 3 datacenters with different Hardware and software specification and different pricing. The cloudlet acts as the software application/web service that the user wants to run on the VM. User chooses the service provider based on the requirements and pricing. Service provider assigns the cloudlets in the chosen datacenter if it can accommodate the VM and Cloudlets.
