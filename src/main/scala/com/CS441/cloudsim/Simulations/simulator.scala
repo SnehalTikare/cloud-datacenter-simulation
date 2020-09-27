@@ -8,12 +8,14 @@ object simulator extends LazyLogging{
   Log.setLevel(ch.qos.logback.classic.Level.INFO);
 
   def main(args: Array[String]): Unit = {
-    println("Choose number from 1 to 4")
+    println("Choose number from 1 to 5")
     val a = scala.io.StdIn.readInt()
     a match {
       case 1 => Simulation_1
       case 2 => new Simulation_2
       case 3 => new NetworkSimulation_1
+      case 4 => new PaaS_Simulation
+      case 5 => new test_simulation
     }
 
   }

@@ -2,42 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e2a14a-2d38-4b16-bb9e-14d0fba9c399" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/topology.brite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application_test.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/TestClass.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/CloudSimulation_HW1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/CloudSimulation_HW1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/com/CS441/tablebuilder/CustomTableBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/com/CS441/tablebuilder/DataCenterBrokerCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Base/PaaS.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Simulations/PaaS_Simulation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Simulations/test_simulation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/utils/ConstantsApplication.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Base/CloudletBase.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Base/CloudletBase.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Base/DataCenterBase.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Base/DataCenterBase.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Base/NetworkEntities.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Base/NetworkEntities.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Simulations/NetworkSimulation_1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Simulations/NetworkSimulation_1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Simulations/Simulation_1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Simulations/Simulation_1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Simulations/Simulation_2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Simulations/Simulation_2.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Simulations/simulator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Simulations/simulator.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/utils/ConfigApplications.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/utils/ConfigApplications.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application_test.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application_test.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/TestClass.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/TestClass.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/CloudSimExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/CloudSimExample.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/com/CS441/cloudsim/Base/CloudletBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/com/CS441/cloudsim/Base/CloudletBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/com/CS441/cloudsim/Base/DataCenterBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/com/CS441/cloudsim/Base/DataCenterBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/com/CS441/cloudsim/utils/ConfigApplications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/com/CS441/cloudsim/utils/ConfigApplications.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/test.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/cloudsimulation_hw1_2.13-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/cloudsimulation_hw1_2.13-0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/input_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/ssExtractDependencies/_global/streams/out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/bgRun/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/bgRun/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.13.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.13.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/copy-resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/mainClass/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/mainClass/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/dependencyClasspathAsJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/dependencyClasspathAsJars/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/fullClasspathAsJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/fullClasspathAsJars/_global/streams/export" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +85,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="Package Object" />
         <option value="Scala Object" />
+        <option value="Package Object" />
         <option value="Class" />
       </list>
     </option>
@@ -115,7 +124,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestClass.checkCloudletCreation">
+  <component name="RunManager" selected="sbt Task.Run cloud sim example">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.CS441.cloudsim.Simulations.simulator" />
       <method v="2">
@@ -141,16 +150,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClass.checkConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CloudSimulation_HW1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestClass" />
-      <option name="METHOD_NAME" value="checkConfig" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestClass.checkDataCenterCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CloudSimulation_HW1" />
       <option name="PACKAGE_NAME" value="" />
@@ -166,6 +165,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestClass" />
       <option name="METHOD_NAME" value="checkVMListCreation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass.checkVMScheduler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CloudSimulation_HW1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestClass" />
+      <option name="METHOD_NAME" value="checkVMScheduler" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -196,18 +205,18 @@
       <item itemvalue="sbt Task.Run cloud sim example" />
       <item itemvalue="sbt Task.Run scala example" />
       <item itemvalue="JUnit.TestClass" />
-      <item itemvalue="JUnit.TestClass.checkConfig" />
       <item itemvalue="JUnit.TestClass.checkDataCenterCreation" />
       <item itemvalue="JUnit.TestClass.checkVMListCreation" />
       <item itemvalue="JUnit.TestClass.checkCloudletCreation" />
+      <item itemvalue="JUnit.TestClass.checkVMScheduler" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestClass.checkCloudletCreation" />
-        <item itemvalue="JUnit.TestClass" />
         <item itemvalue="JUnit.TestClass.checkVMListCreation" />
         <item itemvalue="JUnit.TestClass.checkDataCenterCreation" />
-        <item itemvalue="JUnit.TestClass.checkConfig" />
+        <item itemvalue="JUnit.TestClass" />
+        <item itemvalue="JUnit.TestClass.checkVMScheduler" />
+        <item itemvalue="JUnit.TestClass.checkCloudletCreation" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +277,7 @@
       <workItem from="1600673352558" duration="119000" />
       <workItem from="1600673492376" duration="35910000" />
       <workItem from="1600811295147" duration="3708000" />
-      <workItem from="1600815691356" duration="39996000" />
+      <workItem from="1600815691356" duration="92939000" />
     </task>
     <task id="LOCAL-00001" summary="Added Network DataCenter">
       <created>1600876931614</created>
@@ -284,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600876975237</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Test cases">
+      <created>1600966591293</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600966591293</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +311,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Network DataCenter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Network DataCenter" />
+    <MESSAGE value="Added Test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Test cases" />
   </component>
   <component name="WindowStateProjectService">
     <state x="396" y="126" key="#Main" timestamp="1600814283477">
@@ -306,18 +323,18 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="94" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1599605152587" />
-    <state x="458" y="202" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1600965404777">
+    <state x="458" y="202" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1601184167125">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="458" y="202" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.877@0.23.1440.877" timestamp="1600965404777" />
-    <state x="334" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600814401390">
+    <state x="458" y="202" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.877@0.23.1440.877" timestamp="1601184167125" />
+    <state x="334" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601007725440">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="334" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1600814401390" />
-    <state x="100" y="123" width="1240" height="677" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1600964795054">
+    <state x="334" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1601007725440" />
+    <state x="100" y="123" width="1240" height="677" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1601185043697">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="100" y="123" width="1240" height="677" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.877@0.23.1440.877" timestamp="1600964795054" />
+    <state x="100" y="123" width="1240" height="677" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.877@0.23.1440.877" timestamp="1601185043697" />
     <state x="445" y="239" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600833308814">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -334,46 +351,46 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="486" y="295" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.877@0.23.1440.877" timestamp="1600673841521" />
-    <state x="0" y="64" key="CommitChangelistDialog2" timestamp="1600966545690">
+    <state x="0" y="64" key="CommitChangelistDialog2" timestamp="1600966590871">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="0" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1600966545690" />
-    <state width="1398" height="240" key="GridCell.Tab.0.bottom" timestamp="1600965961712">
+    <state x="0" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1600966590871" />
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom" timestamp="1601193158686">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600965961712" />
-    <state width="1398" height="240" key="GridCell.Tab.0.center" timestamp="1600965961712">
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1601193158686" />
+    <state width="1398" height="230" key="GridCell.Tab.0.center" timestamp="1601193158685">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1600965961712" />
-    <state width="1398" height="240" key="GridCell.Tab.0.left" timestamp="1600965961711">
+    <state width="1398" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1601193158685" />
+    <state width="1398" height="230" key="GridCell.Tab.0.left" timestamp="1601193158685">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1600965961711" />
-    <state width="1398" height="240" key="GridCell.Tab.0.right" timestamp="1600965961712">
+    <state width="1398" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1601193158685" />
+    <state width="1398" height="230" key="GridCell.Tab.0.right" timestamp="1601193158686">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1600965961712" />
-    <state width="1398" height="284" key="GridCell.Tab.1.bottom" timestamp="1600826980343">
+    <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1601193158686" />
+    <state width="1398" height="284" key="GridCell.Tab.1.bottom" timestamp="1601015304354">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600826980343" />
-    <state width="1398" height="284" key="GridCell.Tab.1.center" timestamp="1600826980342">
+    <state width="1398" height="284" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1601015304354" />
+    <state width="1398" height="284" key="GridCell.Tab.1.center" timestamp="1601015304354">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1600826980342" />
-    <state width="1398" height="284" key="GridCell.Tab.1.left" timestamp="1600826980342">
+    <state width="1398" height="284" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1601015304354" />
+    <state width="1398" height="284" key="GridCell.Tab.1.left" timestamp="1601015304353">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1600826980342" />
-    <state width="1398" height="284" key="GridCell.Tab.1.right" timestamp="1600826980342">
+    <state width="1398" height="284" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1601015304353" />
+    <state width="1398" height="284" key="GridCell.Tab.1.right" timestamp="1601015304354">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1600826980342" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600876991249">
+    <state width="1398" height="284" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1601015304354" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600966602594">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1600876991249" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1600966602594" />
     <state x="397" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1600623718331">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -386,6 +403,22 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="97" y="155" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1600024725158" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/cloudsimplus/cloudsim-plus/5.1.0/cloudsim-plus-5.1.0-sources.jar!/org/cloudbus/cloudsim/brokers/DatacenterBrokerAbstract.java</url>
+          <line>337</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/CS441/cloudsim/Simulations/PaaS_Simulation.scala</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CloudSimulation_HW1$TestClass.ic" NAME="TestClass Coverage Results" MODIFIED="1600920535991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -1,10 +1,7 @@
 package com.CS441.cloudsim.Base
 
-import java.util.ArrayList
-
 import com.typesafe.scalalogging.{LazyLogging, Logger}
 import com.CS441.cloudsim.utils.ConfigApplications
-import com.typesafe.config.Config
 import org.cloudbus.cloudsim.allocationpolicies.{VmAllocationPolicy, VmAllocationPolicyBestFit, VmAllocationPolicyFirstFit, VmAllocationPolicyRoundRobin, VmAllocationPolicyWorstFit}
 import org.cloudbus.cloudsim.core.{CloudSim, Simulation}
 import org.cloudbus.cloudsim.datacenters.{Datacenter, DatacenterSimple}
@@ -13,13 +10,11 @@ import org.cloudbus.cloudsim.hosts.network.NetworkHost
 import org.cloudbus.cloudsim.resources.{Pe, PeSimple}
 import org.cloudbus.cloudsim.schedulers.vm.{VmScheduler, VmSchedulerSpaceShared, VmSchedulerTimeShared}
 import org.cloudbus.cloudsim.datacenters.network.NetworkDatacenter
-import org.cloudbus.cloudsim.network.switches.{AggregateSwitch, EdgeSwitch, RootSwitch, Switch}
 import org.cloudbus.cloudsim.schedulers.cloudlet.{CloudletScheduler, CloudletSchedulerSpaceShared, CloudletSchedulerTimeShared}
 import org.cloudbus.cloudsim.vms.network.NetworkVm
 import org.cloudbus.cloudsim.vms.{Vm, VmSimple}
 
 import scala.collection.JavaConverters._
-import scala.reflect.ClassTag
 
 
 class DataCenterBase extends LazyLogging{
@@ -40,7 +35,7 @@ class DataCenterBase extends LazyLogging{
       .toList
   }
 
-  private def createPes(NO_PES:Int,PES_CAPACITY:Double): List[Pe] = {
+   def createPes(NO_PES:Int,PES_CAPACITY:Double): List[Pe] = {
     createPesInstance(NO_PES, PES_CAPACITY)
   }
 
@@ -57,18 +52,16 @@ class DataCenterBase extends LazyLogging{
     logger.info("Number of Hosts created - {}",HOSTS_NO )
     (1 to HOSTS_NO).map {
       host =>
-         HostType match {
-          case "host1" => val pelist = createPes(configs.HOSTS1.getInt("no_pes"),configs.HOSTS1.getDouble("mips"))
-                          val host =createHostInstance(configs.HOSTS1.getLong("ram"), configs.HOSTS1.getLong("bandwidth"), configs.HOSTS1.getLong("storage"), pelist,HostInstanceType:String)
-                          val scheduler =getVMScheduler(configs.HOSTS1.getString("vmscheduler"))
-                          host.setVmScheduler(scheduler)
-          case "host2" => val pelist = createPes(configs.HOSTS2.getInt("no_pes"),configs.HOSTS1.getDouble("mips"))
-                          val host =createHostInstance(configs.HOSTS2.getLong("ram"), configs.HOSTS2.getLong("bandwidth"), configs.HOSTS2.getLong("storage"), pelist,HostInstanceType:String)
-                          val scheduler = getVMScheduler(configs.HOSTS2.getString("vmscheduler"))
-                          host.setVmScheduler(scheduler)
+        val configHost = HostType match {
+          case "host1" =>  configs.HOSTS1
+          case "host2" =>  configs.HOSTS2
+          case "host3" => configs.HOSTS3
         }
-        //val scheduler = getVMScheduler(configs.HOSTS1.getString("vmscheduler"))
-
+        val pelist = createPes(configHost.getInt("no_pes"),configHost.getDouble("mips"))
+        val host =createHostInstance(configHost.getLong("ram"), configHost.getLong("bandwidth"), configHost.getLong("storage"), pelist,HostInstanceType:String)
+        val scheduler =getVMScheduler(configHost.getString("vmscheduler"))
+        host.enableStateHistory()
+        host.setVmScheduler(scheduler)
     }
       .toList
   }
@@ -99,26 +92,30 @@ class DataCenterBase extends LazyLogging{
    * * PES - Number of PE(Processing Element)
    * @return List of VM
    */
-  def createVmList(VM_NO:Int, VM_TYPE:String,SchedulerType:String): List[Vm] ={
+  def createVmList(VM_NO:Int, VM_TYPE:String,SchedulerType:String,VM_ARCH:String): List[Vm] ={
+    logger.info("Creating {} VM of type {} which uses {} for scheduling cloudlets",VM_NO,VM_TYPE,SchedulerType)
+    val configVMS = VM_ARCH match {
+      case "vm1" => configs.VMS1
+      case "vm2" => configs.VMS2
+      case "vm3" => configs.VMS3
+    }
     (1 to VM_NO).map{
       vm =>
         val vm  =
         VM_TYPE match{
-          case "SimpleVm" =>  new VmSimple(configs.VMS.getInt("mips"),configs.VMS.getInt("vm_pes"))
-                              //vm.setBw(configs.VMS.getInt(" bandwidth")).setRam(configs.VMS.getInt(" ram")).setSize(configs.VMS.getInt(" size"))
-
-          case "NetworkVm" =>  new NetworkVm(configs.VMS.getInt("mips"),configs.VMS.getInt("vm_pes"))
+          case "SimpleVm" =>  new VmSimple(configVMS.getInt("mips"),configVMS.getInt("vm_pes"))
+          case "NetworkVm" =>  new NetworkVm(configVMS.getInt("mips"),configVMS.getInt("vm_pes"))
         }
-          vm.setBw(configs.VMS.getInt(" bandwidth")).setRam(configs.VMS.getInt(" ram")).setSize(configs.VMS.getInt(" size"))
+          vm.setBw(configVMS.getInt(" bandwidth")).setRam(configVMS.getInt(" ram")).setSize(configVMS.getInt(" size"))
           val scheduler = getCloudletScheduler(SchedulerType)
           vm.setCloudletScheduler(scheduler)
     }.toList
 
   }
 
-  def createDataCenterList(DataCenterType:String,NO_OF_DATACENTER:Int,Vm_Allocation_Policy:String, simulation: CloudSim,HOSTTYPE:String):List[Datacenter] = {
+  def createDataCenterList(ServiceProvider:String,DataCenterType:String,NO_OF_DATACENTER:Int,Vm_Allocation_Policy:String, simulation: CloudSim,HOSTTYPE:String):List[Datacenter] = {
     (1 to NO_OF_DATACENTER).map{
-      dc => createDataCenter(DataCenterType:String,Vm_Allocation_Policy:String, simulation: CloudSim,HOSTTYPE:String)
+      dc => createDataCenter(ServiceProvider:String,DataCenterType:String,Vm_Allocation_Policy:String, simulation: CloudSim,HOSTTYPE:String)
     }.toList
   }
 
@@ -131,15 +128,22 @@ class DataCenterBase extends LazyLogging{
    * @return Datacenter
    */
 
-  def createDataCenter(DataCenterType:String,Vm_Allocation_Policy:String, simulation: CloudSim,HOSTTYPE:String) : Datacenter ={
+  def createDataCenter(ServiceProvider:String,DataCenterType:String,Vm_Allocation_Policy:String, simulation: CloudSim,HOSTTYPE:String) : Datacenter ={
    val DataCenter = DataCenterType match{
       case "SimpleDataCenter" => createSimpleDataCenter(Vm_Allocation_Policy:String, simulation: CloudSim,HOSTTYPE:String)
       case "NetworkDataCenter" => createNetworkDataCenter(Vm_Allocation_Policy:String, simulation: CloudSim,HOSTTYPE:String)
     }
-    DataCenter.getCharacteristics().setCostPerBw(configs.DATACENTERS.getInt("costPerBandwidth"))
-    DataCenter.getCharacteristics().setCostPerMem(configs.DATACENTERS.getInt("costPerMemory"))
-    DataCenter.getCharacteristics().setCostPerSecond(configs.DATACENTERS.getInt("costPerSecond"))
-    DataCenter.getCharacteristics().setCostPerStorage(configs.DATACENTERS.getInt("costPerStorage"))
+    val configDATACENTERS =
+      ServiceProvider match {
+        case "datacenter1" => configs.DATACENTERS1
+        case "datacenter2" => configs.DATACENTERS2
+        case "datacenter3" => configs.DATACENTERS3
+      }
+    DataCenter.getCharacteristics.setArchitecture(configDATACENTERS.getString("os"))
+    DataCenter.getCharacteristics.setCostPerBw(configDATACENTERS.getDouble("costPerBandwidth"))
+    DataCenter.getCharacteristics.setCostPerMem(configDATACENTERS.getDouble("costPerMemory"))
+    DataCenter.getCharacteristics.setCostPerSecond(configDATACENTERS.getDouble("costPerSecond"))
+    DataCenter.getCharacteristics.setCostPerStorage(configDATACENTERS.getDouble("costPerStorage"))
     DataCenter
 
   }
@@ -189,6 +193,7 @@ class DataCenterBase extends LazyLogging{
       case "SpaceShared" => new CloudletSchedulerSpaceShared()
     }
   }
+
 
 
 }

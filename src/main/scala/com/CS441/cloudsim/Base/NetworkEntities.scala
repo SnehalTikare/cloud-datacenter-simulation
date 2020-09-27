@@ -4,6 +4,7 @@ import java.util
 
 import com.typesafe.config.Config
 import org.cloudbus.cloudsim.brokers.DatacenterBroker
+import org.cloudbus.cloudsim.cloudlets.network.NetworkCloudlet
 import org.cloudbus.cloudsim.core.CloudSim
 import org.cloudbus.cloudsim.datacenters.Datacenter
 import org.cloudbus.cloudsim.datacenters.network.NetworkDatacenter
@@ -19,21 +20,28 @@ class NetworkEntities extends DataCenterBase {
    * @param simulation
    * @param datacenter
    */
-  def createNetwork(simulation: CloudSim,datacenter: NetworkDatacenter):Unit = {
+  def createNetwork(simulation: CloudSim,datacenter: NetworkDatacenter,ServiceProvider:String):Unit = {
+    val configDATACENTERS =
+      ServiceProvider match {
+        case "datacenter1" => configs.DATACENTERS1
+        case "datacenter2" => configs.DATACENTERS2
+        case "datacenter3" => configs.DATACENTERS3
+
+      }
     logger.info("Creating Root Switches" )
     val rootswitch = createSwitchInstance[RootSwitch](configs.ROOT_SWITCH,
       simulation: CloudSim,
       datacenter: NetworkDatacenter,
-      configs.DATACENTERS.getConfig(configs.ROOT_SWITCH).getDouble("bandwidth"),
-      configs.DATACENTERS.getConfig(configs.ROOT_SWITCH).getInt("port"),
-      configs.DATACENTERS.getConfig(configs.ROOT_SWITCH).getDouble("delay"))
+      configDATACENTERS.getConfig(configs.ROOT_SWITCH).getDouble("bandwidth"),
+      configDATACENTERS.getConfig(configs.ROOT_SWITCH).getInt("port"),
+      configDATACENTERS.getConfig(configs.ROOT_SWITCH).getDouble("delay"))
     logger.info("Creating Aggregates Switches" )
-    val aggregateswitches = createAggregateSwitches(simulation: CloudSim,datacenter: NetworkDatacenter,rootswitch,configs.DATACENTERS.getConfig(configs.AGGREGATE_SWITCH))
+    val aggregateswitches = createAggregateSwitches(simulation: CloudSim,datacenter: NetworkDatacenter,rootswitch,configDATACENTERS.getConfig(configs.AGGREGATE_SWITCH),configDATACENTERS)
     logger.info("Creating Edge Switches" )
-    val edgeswitches = createEdgeSwitches(simulation: CloudSim,datacenter: NetworkDatacenter,aggregateswitches,configs.DATACENTERS.getConfig(configs.EDGE_SWITCH))
+    val edgeswitches = createEdgeSwitches(simulation: CloudSim,datacenter: NetworkDatacenter,aggregateswitches,configDATACENTERS.getConfig(configs.EDGE_SWITCH),configDATACENTERS)
     val networkHostList = datacenter.getHostList[NetworkHost]
     networkHostList.forEach { host =>
-      val switch_num = getSwitchIndex(host, configs.DATACENTERS.getConfig(configs.EDGE_SWITCH).getInt("port"))
+      val switch_num = getSwitchIndex(host, configDATACENTERS.getConfig(configs.EDGE_SWITCH).getInt("port"))
       host.setEdgeSwitch(edgeswitches(switch_num).asInstanceOf[EdgeSwitch])
       //edgeswitches(switch_num).connectHo st(host)
     }
@@ -48,16 +56,16 @@ class NetworkEntities extends DataCenterBase {
    * @param config - Config Object
    * @return List of Edge Switches
    */
-  def createEdgeSwitches(sim: CloudSim, datacenter: NetworkDatacenter, aggregate: List[Switch], config: Config): List[Switch] ={
+  def createEdgeSwitches(sim: CloudSim, datacenter: NetworkDatacenter, aggregate: List[Switch], config: Config,configDATACENTERS:Config): List[Switch] ={
     (1 until config.getInt("num")).map{
       ed =>
         val edSwitch = createSwitchInstance[EdgeSwitch](configs.EDGE_SWITCH,   sim: CloudSim,
           datacenter: NetworkDatacenter,
-          configs.DATACENTERS.getConfig(configs.EDGE_SWITCH).getDouble("bandwidth"),
-          configs.DATACENTERS.getConfig(configs.EDGE_SWITCH).getInt("port"),
-          configs.DATACENTERS.getConfig(configs.EDGE_SWITCH).getDouble("delay"))
+          configDATACENTERS.getConfig(configs.EDGE_SWITCH).getDouble("bandwidth"),
+          configDATACENTERS.getConfig(configs.EDGE_SWITCH).getInt("port"),
+          configDATACENTERS.getConfig(configs.EDGE_SWITCH).getDouble("delay"))
         datacenter.addSwitch(edSwitch)
-        val agswitchnum = ed / configs.DATACENTERS.getConfig(configs.AGGREGATE_SWITCH).getInt("port")
+        val agswitchnum = ed / configDATACENTERS.getConfig(configs.AGGREGATE_SWITCH).getInt("port")
         edSwitch.getUplinkSwitches.add(aggregate(agswitchnum))
         aggregate(agswitchnum).getDownlinkSwitches.add(edSwitch)
         edSwitch
@@ -73,15 +81,15 @@ class NetworkEntities extends DataCenterBase {
    * @param config
    * @return List of Aggregate Switches
    */
-  def createAggregateSwitches(sim: CloudSim, datacenter: NetworkDatacenter, rootswitch: Switch, config:Config): List[Switch] ={
+  def createAggregateSwitches(sim: CloudSim, datacenter: NetworkDatacenter, rootswitch: Switch, config:Config,configDATACENTERS:Config): List[Switch] ={
     (1 to config.getInt("num")).map{
       ag =>
         val agSwitch = createSwitchInstance[AggregateSwitch](configs.AGGREGATE_SWITCH,
           sim: CloudSim,
           datacenter: NetworkDatacenter,
-          configs.DATACENTERS.getConfig(configs.AGGREGATE_SWITCH).getDouble("bandwidth"),
-          configs.DATACENTERS.getConfig(configs.AGGREGATE_SWITCH).getInt("port"),
-          configs.DATACENTERS.getConfig(configs.AGGREGATE_SWITCH).getDouble("delay"))
+          configDATACENTERS.getConfig(configs.AGGREGATE_SWITCH).getDouble("bandwidth"),
+          configDATACENTERS.getConfig(configs.AGGREGATE_SWITCH).getInt("port"),
+          configDATACENTERS.getConfig(configs.AGGREGATE_SWITCH).getDouble("delay"))
         datacenter.addSwitch(agSwitch)
         rootswitch.getDownlinkSwitches.add(agSwitch)
         agSwitch.getUplinkSwitches.add(rootswitch)
@@ -133,4 +141,6 @@ class NetworkEntities extends DataCenterBase {
       count+=1
     }
   }
+
+
 }
