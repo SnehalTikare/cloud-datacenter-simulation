@@ -41,6 +41,7 @@ class TestClass {
   val CLOUDLETS_CPU_UTIL = cloud_service_provider.get(0).getConfig("UtilizationModel")
   val VM_ARCH = cloud_service_provider.get(0).getConfig("vm_arch")
   val VMS1 = cloud_service_provider.get(0).getConfig("vm1")
+  val CLOUDLETS_TYPE =  orig_config.getConfigList("CloudCompanies").get(0).getConfig("CloudletType").getString("cloudlet")
 
 
   val HOSTS_NO = orig_config.getConfigList("CloudCompanies").get(0).getInt("no_of_hosts")
@@ -75,7 +76,7 @@ class TestClass {
     }.toList
 
     val datacentertest = new DatacenterSimple(simulation, hostList.asJava, new VmAllocationPolicyFirstFit)
-    val datacenter = new DataCenterBase().createDataCenter(SERVICE_PROVIDER.getString("datacenter1"),DATACENTER_TYPE.getString("Simple"),VMAllocationPolicy.getString("First_fit"),simulation,HOST_TYPE.getString("host1"))
+    val datacenter = new DataCenterBase().createDataCenter(HOSTS_NO,SERVICE_PROVIDER.getString("datacenter1"),DATACENTER_TYPE.getString("Simple"),VMAllocationPolicy.getString("First_fit"),simulation,HOST_TYPE.getString("host1"))
 
     Assert.assertNotNull(datacenter)
     Assert.assertEquals(datacenter.getClass,datacentertest.getClass)
@@ -115,7 +116,7 @@ class TestClass {
       cd =>
         new CloudletSimple(LENGTH_OF_CLOUDLET,NO_OF_PES_PER_CLOUDLET).setUtilizationModelCpu(new UtilizationModelDynamic(0.5))
     }.toList
-    val cloudletList = new CloudletBase().createCloudlets(CLOUDLETS_CPU_UTIL.getDouble("half"))
+    val cloudletList = new CloudletBase().createCloudlets(NO_OF_CLOUDLETS,CLOUDLETS_TYPE,CLOUDLETS_CPU_UTIL.getDouble("half"))
     Assert.assertNotNull(cloudletList)
     Assert.assertEquals(cloudletListTest.getClass, cloudletList.getClass)
     Assert.assertEquals(cloudletList(0).getUtilizationOfCpu(),cloudletList(0).getUtilizationOfCpu(),0.01)

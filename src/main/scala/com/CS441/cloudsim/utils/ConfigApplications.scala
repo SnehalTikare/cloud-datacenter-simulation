@@ -54,12 +54,28 @@ class ConfigApplications {
   val NUMBER_OF_PACKETS_TO_SEND = CLOUDLETS.getInt("number_of_packets_to_send")
   val TASK_RAM = CLOUDLETS.getInt("task_ram")
 
+  val CLOUDLET_TYPE = cloud_service_provider.get(0).getConfig("CloudletType")
   val CLOUDLETS_SCHEDULER = cloud_service_provider.get(0).getConfig("Cloudlet_Scheduler")
   val CLOUDLETS_CPU_UTIL = cloud_service_provider.get(0).getConfig("UtilizationModel")
+
+  val saas_cloudlet = cloud_service_provider.get(0).getConfig("SaaS_Cloudlets")
 
   val SCHEDULING_INTERVAL = cloud_service_provider.get(0).getInt("scheduling_interval")
 
   val NETWORK_TOPOLOGY_FILE = cloud_service_provider.get(0).getString("network_topology_file")
+
+  ///---------------Infrastructure as a Service ----------------------------------------------------//
+  val IaaS = cloud_service_provider.get(0).getConfig("Infrastructure_as_a_Service")
+  val infra_datacenter = IaaS.getConfig("infra_datacenter")
+  val infra_vm_policy = IaaS.getString("vm_policy")
+  val infra_util = IaaS.getDouble("utilization")
+  val infra_scheduler = IaaS.getString("scheduler")
+//  val infra_os = IaaS.getString("os")
+  val infra_host = IaaS.getConfig("infra_host")
+  val infra_host_no = IaaS.getInt("hosts_no")
+  val infra_vm_no = IaaS.getInt("vm_no")
+  val infra_vm = IaaS.getConfig("infra_vm")
+  val infra_cloudlets = IaaS.getConfig("infra_cloudlets")
 
 
 }

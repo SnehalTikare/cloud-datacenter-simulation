@@ -12,18 +12,34 @@ import org.cloudbus.cloudsim.vms.network.NetworkVm
 class CloudletBase {
 
   val config = new ConfigApplications
+/*
+ val NO_OF_CLOUDLETS = CLOUDLETS.getInt("cloudlets_num")
+  val NO_OF_PES_PER_CLOUDLET = CLOUDLETS.getInt("cloudlet_pes")
+  val LENGTH_OF_CLOUDLET = CLOUDLETS.getInt("cloudlet_length")
+  val FILE_SIZE = CLOUDLETS.getInt("fileSize")
+  val OUTPUT_SIZE = CLOUDLETS.getInt("outputSize")
+  val PACKET_DATA_LENGTH_IN_BYTES = CLOUDLETS.getInt("packet_data_length_in_bytes")
+  val NUMBER_OF_PACKETS_TO_SEND = CLOUDLETS.getInt("number_of_packets_to_send")
+  val TASK_RAM = CLOUDLETS.getInt("task_ram")
+
+*/
 
   /**
    * Creates a list of Cloudlets
    * @return list of cloudlets
    */
-  def createCloudlets(PERCENT:Double) : List[Cloudlet] ={
-    (1 to config.NO_OF_CLOUDLETS).map{
+  def createCloudlets(Cloudlet_No:Int,Cloudlet_type:String,PERCENT:Double) : List[Cloudlet] ={
+    val configs =
+      Cloudlet_type match {
+        case "cloudlet" => config.CLOUDLETS
+        case "infra_cloudlet" => config.infra_cloudlets
+      }
+    (1 to Cloudlet_No).map{
       cd =>
-        new CloudletSimple(config.LENGTH_OF_CLOUDLET,config.NO_OF_PES_PER_CLOUDLET)
+        new CloudletSimple(configs.getInt("cloudlet_length"),configs.getInt("cloudlet_pes"))
           .setUtilizationModelCpu(CPUUtilization(PERCENT))
-          .setFileSize(config.FILE_SIZE)
-          .setOutputSize(config.OUTPUT_SIZE)
+          .setFileSize(configs.getInt("fileSize"))
+          .setOutputSize(configs.getInt("outputSize"))
     }.toList
   }
 
@@ -44,7 +60,7 @@ class CloudletBase {
   }
 
    def createListNetworkCloudlets(VM_LIST:List[Vm]):List[NetworkCloudlet] = {
-    val networkCloudletList = (1 to config.NO_OF_CLOUDLETS).map{
+    val networkCloudletList = (1 to config.saas_cloudlet.getInt("cloudlets_num")).map{
       x =>
         createNetworkCloudlet(VM_LIST(x).asInstanceOf[NetworkVm])
     }.toList
@@ -64,10 +80,10 @@ class CloudletBase {
    * @return
    */
    def createNetworkCloudlet(vm: NetworkVm):NetworkCloudlet = {
-    val cloudlet = new NetworkCloudlet(config.LENGTH_OF_CLOUDLET,config.NO_OF_PES_PER_CLOUDLET)
-    cloudlet.setMemory(config.TASK_RAM)
-      .setFileSize(config.FILE_SIZE)
-      .setOutputSize(config.OUTPUT_SIZE)
+    val cloudlet = new NetworkCloudlet(config.saas_cloudlet.getInt("cloudlet_length"),config.saas_cloudlet.getInt("cloudlet_pes"))
+    cloudlet.setMemory(config.saas_cloudlet.getInt("task_ram"))
+      .setFileSize(config.saas_cloudlet.getInt("fileSize"))
+      .setOutputSize(config.saas_cloudlet.getInt("outputSize"))
       .setUtilizationModel(new UtilizationModelFull).setVm(vm)
       .setBroker(vm.getBroker)
     cloudlet
@@ -80,8 +96,8 @@ class CloudletBase {
    * @param cloudlet the { @link NetworkCloudlet} the task will belong to
    */
    def addExecutionTask(cloudlet: NetworkCloudlet): Unit = {
-    val task = new CloudletExecutionTask(cloudlet.getTasks.size,config.LENGTH_OF_CLOUDLET)
-    task.setMemory(config.TASK_RAM)
+    val task = new CloudletExecutionTask(cloudlet.getTasks.size,config.saas_cloudlet.getInt("cloudlet_length"))
+    task.setMemory(config.saas_cloudlet.getInt("task_ram"))
     cloudlet.addTask(task)
   }
 
@@ -93,10 +109,10 @@ class CloudletBase {
    */
    def addSendTask(sourceCloudlet: NetworkCloudlet, destinationCloudlet: NetworkCloudlet): Unit = {
     val task = new CloudletSendTask(sourceCloudlet.getTasks.size)
-    task.setMemory(config.TASK_RAM)
+    task.setMemory(config.saas_cloudlet.getInt("task_ram"))
     sourceCloudlet.addTask(task)
-    (0 until config.NUMBER_OF_PACKETS_TO_SEND).foreach(
-      _ => task.addPacket(destinationCloudlet, config.PACKET_DATA_LENGTH_IN_BYTES)
+    (0 until config.saas_cloudlet.getInt("number_of_packets_to_send")).foreach(
+      _ => task.addPacket(destinationCloudlet, config.saas_cloudlet.getInt("packet_data_length_in_bytes"))
     )
   }
 
@@ -109,8 +125,8 @@ class CloudletBase {
    */
   def addReceiveTask(cloudlet: NetworkCloudlet, sourceCloudlet: NetworkCloudlet): Unit = {
     val task = new CloudletReceiveTask(cloudlet.getTasks.size, sourceCloudlet.getVm)
-    task.setMemory(config.TASK_RAM)
-    task.setExpectedPacketsToReceive(config.NUMBER_OF_PACKETS_TO_SEND)
+    task.setMemory(config.saas_cloudlet.getInt("task_ram"))
+    task.setExpectedPacketsToReceive(config.saas_cloudlet.getInt("number_of_packets_to_send"))
     cloudlet.addTask(task)
   }
 }

@@ -48,14 +48,14 @@ object Simulation_1 extends LazyLogging{
   val datacenterbase =  new DataCenterBase
 
   logger.info("Creating a Simple DataCenter with First Fit VM Allocation Policy and Host Type 1..")
-  val datacenter = datacenterbase.createDataCenter(config.SERVICE_PROVIDER.getString("datacenter1"),config.DATACENTER_TYPE.getString("Simple"),config.FIRST_FIT,simulation_1,config.HOST_TYPE.getString("host1"))
+  val datacenter = datacenterbase.createDataCenter(config.HOSTS_NO,config.SERVICE_PROVIDER.getString("datacenter1"),config.DATACENTER_TYPE.getString("Simple"),config.FIRST_FIT,simulation_1,config.HOST_TYPE.getString("host1"))
   datacenter.setSchedulingInterval(config.SCHEDULING_INTERVAL)
   logger.info("Creating a list of Simple VM with Time Shared Scheduler for Cloudlets")
   val vmList = datacenterbase.createVmList(config.VM_NO,config.VM_TYPE.getString("Simple"), config.CLOUDLETS_SCHEDULER.getString("TimeShared"),config.VM_ARCH.getString("vm1"))
 
   logger.info("Creating a list of Simple Cloudlets")
   val cloudlet = new CloudletBase
- val cloudletList = cloudlet.createCloudlets(config.CLOUDLETS_CPU_UTIL.getDouble("full"))
+ val cloudletList = cloudlet.createCloudlets(config.NO_OF_CLOUDLETS,config.CLOUDLET_TYPE.getString("cloudlet"),config.CLOUDLETS_CPU_UTIL.getDouble("full"))
   //val cloudletList = cloudlet.createCloudletInVM(vmList,config.CLOUDLETS_CPU_UTIL.getDouble("full"))
 
 
