@@ -1,61 +1,57 @@
-[debug] Packaging /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/cloudsimulation_hw1_2.13-0.1.jar ...
-[debug] Input file mappings:
-[debug] 	logback.xml
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/logback.xml
-[debug] 	topology.brite
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/topology.brite
-[debug] 	test.log
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/test.log
-[debug] 	META-INF
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/META-INF
-[debug] 	META-INF/CloudSimulation_HW1.kotlin_module
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/META-INF/CloudSimulation_HW1.kotlin_module
-[debug] 	application.conf
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/application.conf
-[debug] 	com
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com
-[debug] 	com/CS441
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441
-[debug] 	com/CS441/tablebuilder
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/tablebuilder
-[debug] 	com/CS441/tablebuilder/CustomTableBuilder.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/tablebuilder/CustomTableBuilder.class
-[debug] 	com/CS441/tablebuilder/DataCenterBrokerCustom.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/tablebuilder/DataCenterBrokerCustom.class
-[debug] 	com/CS441/cloudsim
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim
-[debug] 	com/CS441/cloudsim/utils
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/utils
-[debug] 	com/CS441/cloudsim/utils/ConfigApplications.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/utils/ConfigApplications.class
-[debug] 	com/CS441/cloudsim/utils/ConstantsApplication.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/utils/ConstantsApplication.class
-[debug] 	com/CS441/cloudsim/Simulations
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations
-[debug] 	com/CS441/cloudsim/Simulations/Simulation_2.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/Simulation_2.class
-[debug] 	com/CS441/cloudsim/Simulations/simulator.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/simulator.class
-[debug] 	com/CS441/cloudsim/Simulations/PaasSimulation.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/PaasSimulation.class
-[debug] 	com/CS441/cloudsim/Simulations/Simulation_1.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/Simulation_1.class
-[debug] 	com/CS441/cloudsim/Simulations/SaasSimulation.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/SaasSimulation.class
-[debug] 	com/CS441/cloudsim/Simulations/IaasSimulation.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/IaasSimulation.class
-[debug] 	com/CS441/cloudsim/Simulations/Simulation_1$.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/Simulation_1$.class
-[debug] 	com/CS441/cloudsim/Simulations/simulator$.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/simulator$.class
-[debug] 	com/CS441/cloudsim/Base
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base
-[debug] 	com/CS441/cloudsim/Base/PaaS.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base/PaaS.class
-[debug] 	com/CS441/cloudsim/Base/CloudletBase.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base/CloudletBase.class
-[debug] 	com/CS441/cloudsim/Base/DataCenterBase.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base/DataCenterBase.class
-[debug] 	com/CS441/cloudsim/Base/NetworkEntities.class
-[debug] 	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base/NetworkEntities.class
-[debug] Done packaging.
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/cloudsimulation_hw1_2.13-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	topology.brite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/topology.brite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	test.log[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/test.log[0m
+[0m[[0m[0mdebug[0m] [0m[0m	application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/tablebuilder[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/tablebuilder[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/tablebuilder/CustomTableBuilder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/tablebuilder/CustomTableBuilder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/tablebuilder/DataCenterBrokerCustom.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/tablebuilder/DataCenterBrokerCustom.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/utils[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/utils[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/utils/ConfigApplications.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/utils/ConfigApplications.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/utils/ConstantsApplication.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/utils/ConstantsApplication.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/Simulation_2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/Simulation_2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/simulator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/simulator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/PaasSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/PaasSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/Simulation_1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/Simulation_1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/SaasSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/SaasSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/IaasSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/IaasSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/Simulation_1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/Simulation_1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Simulations/simulator$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Simulations/simulator$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Base[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Base/PaaS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base/PaaS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Base/CloudletBase.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base/CloudletBase.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Base/DataCenterBase.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base/DataCenterBase.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/CS441/cloudsim/Base/NetworkEntities.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/snehaltikare/Documents/3rd Sem/CS441 Distributed Cloud Computing/CloudSimulation_HW1/target/scala-2.13/classes/com/CS441/cloudsim/Base/NetworkEntities.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

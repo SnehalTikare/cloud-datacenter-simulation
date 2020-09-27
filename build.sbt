@@ -10,3 +10,7 @@ libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2"
 libraryDependencies += "com.typesafe" % "config" % "1.4.0"
 libraryDependencies += "org.cloudsimplus" % "cloudsim-plus" % "5.1.0"
 libraryDependencies += "junit" % "junit" % "4.13"
+libraryDependencies += "com.novocode" % "junit-interface" % "0.10" % "test"
+
+//docs https://github.com/sbt/junit-interface
+testOptions += Tests.Argument(TestFrameworks.JUnit)
