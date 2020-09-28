@@ -4,14 +4,14 @@ Create cloud simulators for evaluating executions of applications in cloud datac
 ## Overview
 This assignment simulates the working of datacenter and various service implementation in cloud computing.The assignment
 uses Cloud Sim plus framework to simulate the model and is developed using Scala.It shows various implementation
-of scheduling and allocation policies and their effects on execution time, provision of resources.It also shows
-the result configuring parameters and their effect on the allocation.
+of scheduling and allocation policies and their effects on execution time, provisioning of resources.It also shows
+the result of configuring parameters and their effect on the allocation of VM and cloudlets.
 
 ## Instructions
 ### Prerequisites
-- Sbt - This assignments need sbt to build the project;
+- Sbt - This assignments needs sbt to build the project;
 - Clone the repository to your local system
-using the command. Or download the zip;
+using the command below. Or download the zip folder;
 ```
 git clone https://SnehalTikare@bitbucket.org/cs441-fall2020/snehal_tikare_hw1.git
 ```
