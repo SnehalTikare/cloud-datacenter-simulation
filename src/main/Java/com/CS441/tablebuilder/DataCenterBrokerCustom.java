@@ -9,6 +9,9 @@ import org.cloudbus.cloudsim.vms.Vm;
 
 import java.util.List;
 
+/*
+Custom Broker class to assign VM to specific data center
+ */
 public class DataCenterBrokerCustom extends DatacenterBrokerAbstract {
     /**
      * Index of the last VM selected from the {@link #getVmExecList()}
@@ -17,7 +20,7 @@ public class DataCenterBrokerCustom extends DatacenterBrokerAbstract {
     private int lastSelectedVmIndex;
 
     /**
-     * Index of the last Datacenter selected to place some VM.
+     * Index of the Datacenter selected to place some VM.
      */
     private int SelectedDcIndex;
 

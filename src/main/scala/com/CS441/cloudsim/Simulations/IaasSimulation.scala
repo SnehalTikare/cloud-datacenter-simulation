@@ -11,7 +11,7 @@ import org.cloudsimplus.util.Log
 import collection.JavaConverters._
 
 class IaasSimulation extends LazyLogging{
-  /*
+  /**
   This class shows implementation of Infrastructure as a Service
   Here, the user has control over the hardware and software specification of VM and Cloudlets
   Configurations are specified in the config file under Infrastructure as a Service
@@ -21,8 +21,8 @@ class IaasSimulation extends LazyLogging{
   2)VM Allocation policy to be used by data center for allocation of VM
   3)Number of cloudlets and their specification
   4)Utilization Model to be used by Cloudlet
-  */
- // Log.setLevel(ch.qos.logback.classic.Level.WARN);
+  **/
+
   logger.info("Running Infrastructure as a Service Simulation ")
   Thread.sleep(1500)
   val config = new ConfigApplications

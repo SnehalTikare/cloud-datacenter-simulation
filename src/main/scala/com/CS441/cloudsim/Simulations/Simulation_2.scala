@@ -15,22 +15,11 @@ import collection.JavaConverters._
 
 class Simulation_2 extends LazyLogging{
   /**
-   * This Simulations shows how Round Robin Allocation Policy and TimeShared Scheduling affects the assignment of VM and running of cloudlets
-   * VM Allocation Policy - Round Robin
-   * Type of host - Host1
-   * HOSTS - 4
-   * HOSTS_PE - 4
-   * TOTAL_PE - 16
-   * HOSTS_MIPS - 2000
-   * TOTAL_CAPACITY - 32000 MIPS
-   * VM - 32
-   * VM_PE - 2
-   * TOTAL_VM_PE - 64
-   * VM_MIPS- 500
-   * TOTAL_VM_CAPACITY - 32000 MIPS
-   * VM Scheduler - TimeShared
-   * Cloudlet Scheduler - TimeShared
-   * Utilization Model - 100%
+   * This Simulations shows how Round Robin Allocation Policy and SpaceShared Scheduling
+   * affects the assignment of VM and running of cloudlets
+   * Host1 and Vm1 are used for this simulation
+   * Change the parameter in these configs to see the results
+   *
    */
   Log.setLevel(ch.qos.logback.classic.Level.INFO);
 

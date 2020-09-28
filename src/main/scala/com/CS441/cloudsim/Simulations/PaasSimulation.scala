@@ -11,14 +11,14 @@ import org.cloudbus.cloudsim.core.CloudSim
 import org.cloudbus.cloudsim.datacenters.Datacenter
 
 import scala.collection.JavaConverters._
-/*
+/**
 This class provides the simulation for PaaS implementation
 Based on the requirement of the user, the  cloudlets are assigned are to the Datacenter
 Current implementation has 3 datacenters with different Hardware and Software Specification and different pricing
 The cloudlet acts as the software application/web service that the user wants to run on the VM.
 User chooses the service provider based on the requirements and pricing.
 Service provider assigns the cloudlets in the chosen datacenter if it can accommodate the VM and Cloudlets.
-*/
+**/
 
 class PaasSimulation extends LazyLogging {
   //Log.setLevel(ch.qos.logback.classic.Level.ERROR);

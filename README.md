@@ -115,4 +115,30 @@ Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTim
 Host 1 data transferred: 3000 bytes 
 ```
 
+#### Results of tests
+```
+[debug] Test run started
+[debug] Test TestClass.checkCloudletCreation started
+[debug] Test TestClass.checkCloudletCreation finished
+[debug] Test TestClass.checkDataCenterCreation started
+[debug] Test TestClass.checkDataCenterCreation finished
+[debug] Test TestClass.checkAllocationPolicy started
+[debug] Test TestClass.checkAllocationPolicy finished
+[debug] Test TestClass.checkConfig started
+[debug] Test TestClass.checkConfig finished
+[debug] Test TestClass.checkVMScheduler started
+[debug] Test TestClass.checkVMScheduler finished
+[debug] Test TestClass.checkVMListCreation started
+[debug] Test TestClass.checkVMListCreation finished
+[debug] Test run finished: 0 failed, 0 ignored, 6 total, 0.243s
+[info] ScalaTest
+[info] Run completed in 403 milliseconds.
+[info] Total number of tests run: 0
+[info] Suites: completed 0, aborted 0
+[info] Tests: succeeded 0, failed 0, canceled 0, ignored 0, pending 0
+[info] No tests were executed.
+[info] Passed: Total 6, Failed 0, Errors 0, Passed 6
+[success] Total time: 4 s, completed Sep 27, 2020, 6:34:36 PM
+```
+
 More detailed explanation and discussion of the results is provided in **"Report.docx"**
