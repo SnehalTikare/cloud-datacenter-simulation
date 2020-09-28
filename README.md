@@ -1,7 +1,6 @@
 # Homework 1 - Cloud Simulation
 ## Description: 
-Create simulations for evaluate of different characteristics and deployment models in a datacenter and studying their results
-
+Create cloud simulators for evaluating executions of applications in cloud datacenters with different characteristics and deployment models.
 ## Overview
 This assignment simulates the working of datacenter and various service implementation in cloud computing.The assignment
 uses Cloud Sim plus framework to simulate the model and is developed using Scala.It shows various implementation
