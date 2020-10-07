@@ -2,7 +2,7 @@ Hi Snehal,
 
 Your grade for HW1 is 7%.
 
-1. -3% for build errors.
+1. -0.5% for build errors. It gets resolved when I change your path to CustomTableBuilder from src/main/Java to src/main/java
 [error] /home/abhijeet-mohanty/Downloads/CS 441 - HW1 Submissions/snehal_tikare_hw1/src/main/scala/com/CS441/cloudsim/Simulations/PaasSimulation.scala:7:18: object tablebuilder is not a member of package com.CS441
 [error] import com.CS441.tablebuilder.{CustomTableBuilder, DataCenterBrokerCustom}
 [error]                  ^
@@ -20,5 +20,7 @@ Your grade for HW1 is 7%.
 [error]       ^
 [error] 5 errors found
 [error] (Compile / compileIncremental) Compilation failed
+
++3%: For implementing your simulations using functional Scala.
 
 Abhijeet
